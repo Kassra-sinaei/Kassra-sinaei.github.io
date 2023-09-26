@@ -34,24 +34,17 @@ a {
 p {
   margin-bottom: 1.5em; }
 
-h1 {
-  color: #ffffff;
-  font-family: "Playfair Display", Georgia, serif;
-  font-weight: 400;
-  margin: 0 0 30px 0; 
-}
 
-
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   color: #000;
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 400;
   margin: 0 0 30px 0; }
 
 h7 {
-  color: #99eaec;
+  color: #ffffff;
   font-family: "Playfair Display", Georgia, serif;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0 0 30px 0; 
 }
 
