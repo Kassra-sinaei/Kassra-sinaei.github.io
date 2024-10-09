@@ -118,7 +118,7 @@ input, select, textarea {
 		font-size: 16pt;
 	}
 
-		@media screen and (max-width: 1680px) {
+		@media screen and (max-width: 1280px) {
 
 			html {
 				font-size: 12pt;
@@ -126,7 +126,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 200px) {
 
 			html {
 				font-size: 11pt;
@@ -885,7 +885,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 300px) {
 
 			#main {
 				background: rgba(255, 255, 255, 0.925);
