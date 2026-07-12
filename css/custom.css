@@ -1,0 +1,274 @@
+/* =======================================================
+   Custom visual refinements
+   Layered on top of the base theme — no content changes,
+   only presentation polish (color, depth, motion, rhythm).
+   ======================================================= */
+
+:root {
+  --accent: #2c98f0;
+  --accent-dark: #1c7dd4;
+  --ink: #1a1d24;
+  --paper: #ffffff;
+  --muted: #8a8f98;
+  --c1: #4054b2;
+  --c2: #2fa499;
+  --c3: #a84cb8;
+  --c4: #f9bf3f;
+  --c5: #ec5453;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+a {
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+/* ---------- Sidebar ---------- */
+
+#colorlib-aside {
+  box-shadow: 2px 0 24px rgba(20, 24, 33, 0.06);
+}
+
+#colorlib-aside .author-img {
+  box-shadow: 0 0 0 4px #fff, 0 0 0 6px rgba(44, 152, 240, 0.35), 0 12px 30px rgba(20, 24, 33, 0.18);
+  transition: box-shadow 0.35s ease;
+}
+
+#colorlib-aside .author-img:hover {
+  box-shadow: 0 0 0 4px #fff, 0 0 0 6px rgba(44, 152, 240, 0.6), 0 16px 34px rgba(20, 24, 33, 0.22);
+}
+
+#colorlib-aside .position {
+  color: var(--muted);
+  letter-spacing: 2px;
+}
+
+#colorlib-aside .position a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+#colorlib-aside #colorlib-main-menu ul li a {
+  border-radius: 4px;
+}
+
+/* ---------- Hero ---------- */
+
+#colorlib-hero .flexslider .slides li .overlay {
+  background: linear-gradient(135deg, rgba(10, 14, 22, 0.55) 0%, rgba(10, 14, 22, 0.28) 55%, rgba(10, 14, 22, 0.5) 100%);
+}
+
+#colorlib-hero .flexslider .slider-text-inner h1,
+#colorlib-hero .flexslider .slider-text-inner h8 {
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.25);
+}
+
+#colorlib-hero .flexslider .slider-text-inner .btn.btn-learn {
+  border-radius: 3px;
+  backdrop-filter: blur(2px);
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#colorlib-hero .flexslider .slider-text-inner .btn.btn-learn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* ---------- Section headings ---------- */
+
+.colorlib-heading {
+  position: relative;
+  padding-bottom: 18px;
+}
+
+.colorlib-heading:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 46px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+.col-md-6.col-md-offset-3 .colorlib-heading:after,
+.col-md-6.col-md-offset-3.col-md-pull-3 .colorlib-heading:after {
+  left: 0;
+  right: 0;
+}
+
+/* ---------- About / service tiles ---------- */
+
+.services {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(20, 24, 33, 0.08);
+}
+
+.services .icon2 {
+  transition: transform 0.3s ease;
+}
+
+.services:hover .icon2 {
+  transform: scale(1.1);
+}
+
+/* ---------- Counters ---------- */
+
+.colorlib-counters {
+  position: relative;
+}
+
+.colorlib-counters:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--c1), var(--c2), var(--c3), var(--c4), var(--c5));
+  z-index: 1;
+}
+
+.colorlib-counter-label {
+  letter-spacing: 1px;
+}
+
+/* ---------- Timeline (Publications & Experience) ---------- */
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+  box-shadow: 0 0 0 5px #f2f3f7, 0 6px 16px rgba(20, 24, 33, 0.18);
+  transition: transform 0.3s ease;
+}
+
+.timeline-entry.animate-box:hover .timeline-icon {
+  transform: scale(1.08);
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+  border-radius: 8px;
+  padding: 18px 22px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+.timeline-entry.animate-box:hover .timeline-label {
+  box-shadow: 0 14px 30px rgba(20, 24, 33, 0.08);
+  background: rgba(44, 152, 240, 0.03);
+  transform: translateX(2px);
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
+  transition: color 0.25s ease;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a:hover {
+  color: var(--accent);
+}
+
+/* ---------- Education accordion ---------- */
+
+.panel {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 14px rgba(20, 24, 33, 0.05) !important;
+}
+
+.panel-heading a {
+  border-radius: 8px 8px 0 0;
+  transition: background 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.panel-heading a.collapsed {
+  border-radius: 8px;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.panel-heading a.collapsed:hover {
+  background: #e9edf5;
+  border-color: var(--accent) !important;
+}
+
+.panel-body {
+  border-radius: 0 0 8px 8px;
+}
+
+/* ---------- Work / project cards ---------- */
+
+.project {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(20, 24, 33, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 36px rgba(20, 24, 33, 0.16);
+}
+
+.project .desc {
+  border-radius: 10px;
+}
+
+/* ---------- Contact ---------- */
+
+.colorlib-feature .colorlib-icon {
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.colorlib-feature:hover .colorlib-icon {
+  transform: translateY(-3px);
+  background: var(--accent);
+  color: #fff;
+}
+
+.form-control {
+  border-radius: 6px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(44, 152, 240, 0.15);
+}
+
+.btn-send-message {
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-send-message:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(44, 152, 240, 0.3);
+}
+
+/* ---------- Footer socials ---------- */
+
+#colorlib-aside .colorlib-footer ul li a {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#colorlib-aside .colorlib-footer ul li a:hover {
+  transform: translateY(-2px);
+}
