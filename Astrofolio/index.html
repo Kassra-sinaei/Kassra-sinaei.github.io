@@ -49,7 +49,7 @@
       </ul>
     </div>
   </div>
-  <p class="scrollcue">22 plates below</p>
+  <p class="scrollcue">27 plates below</p>
 </header>
 
 <!-- ============================== filters ============================== -->
@@ -61,7 +61,8 @@
     <button class="chip" type="button" data-key="nebula" aria-pressed="false">Nebulae</button>
     <button class="chip" type="button" data-key="solar" aria-pressed="false">Solar system</button>
     <button class="chip" type="button" data-key="wide" aria-pressed="false">Wide field</button>
-    <span class="bar__count" id="count">22 plates</span>
+    <button class="chip" type="button" data-key="gear" aria-pressed="false">The rig</button>
+    <span class="bar__count" id="count">27 plates</span>
   </div>
 </nav>
 
@@ -76,6 +77,63 @@
 <main class="archive" id="archive">
   <div class="wrap">
     <div class="plates">
+
+      <button class="plate" type="button" data-filter="solar"
+        data-cat="—" data-name="Total Lunar Eclipse" data-type="Lunar eclipse — totality"
+        data-con="—" data-radec="—"
+        data-site="" data-gear="" data-exp=""
+        data-note="The Moon fully inside Earth&#39;s umbra. It does not go dark because our atmosphere refracts sunlight around the planet and onto it — and scatters the blue out on the way, which is why totality is the colour of every sunrise on Earth at once."
+        data-full="images/web/LunarEclipse-f.jpg">
+        <span class="plate__frame"><img src="images/web/LunarEclipse-t.jpg" alt="The Moon in total eclipse, deep red with a bright pale limb" loading="lazy"></span>
+        <span class="plate__id"><span class="plate__cat plate__cat--none">Luna</span><span class="plate__name">Total Lunar Eclipse</span></span>
+        <span class="plate__sub">Totality</span>
+      </button>
+
+      <button class="plate" type="button" data-filter="nebula"
+        data-cat="NGC 2237 / NGC 2244" data-name="Rosette Nebula" data-type="Emission nebula with open cluster"
+        data-con="Monoceros" data-radec="06h 33m 45s, +04° 59′"
+        data-site="" data-gear="" data-exp=""
+        data-note="The cluster at the centre did not just form here — its stellar wind is what blew the cavity open. The nebula is a shell being cleared from the inside out."
+        data-full="images/web/Rosette-f.jpg">
+        <span class="plate__frame"><img src="images/web/Rosette-t.jpg" alt="The Rosette Nebula, a pink ring of gas around a central star cluster" loading="lazy"></span>
+        <span class="plate__id"><span class="plate__cat">NGC 2237</span><span class="plate__name">Rosette Nebula</span></span>
+        <span class="plate__sub">Recent</span>
+      </button>
+
+      <button class="plate" type="button" data-filter="wide"
+        data-cat="—" data-name="Star Trails over the Field" data-type="Wide field"
+        data-con="—" data-radec="—"
+        data-site="" data-gear="" data-exp=""
+        data-note="A long exposure over a field of other observers, their red headlamps drawing lines along the ground while the sky turns overhead."
+        data-full="images/web/StarTrails_Field-f.jpg">
+        <span class="plate__frame"><img src="images/web/StarTrails_Field-t.jpg" alt="Star trails above a dark field with observers&#39; red lights along the treeline" loading="lazy"></span>
+        <span class="plate__id"><span class="plate__cat plate__cat--none">Wide</span><span class="plate__name">Star Trails over the Field</span></span>
+        <span class="plate__sub">Recent</span>
+      </button>
+
+      <button class="plate" type="button" data-filter="wide"
+        data-cat="—" data-name="Milky Way over the Treeline" data-type="Wide field"
+        data-con="Sagittarius" data-radec="—"
+        data-site="" data-gear="" data-exp=""
+        data-note="The galactic core standing up out of the trees, with the dust lanes of the Great Rift cutting down through it."
+        data-full="images/web/Milkyway_Treeline-f.jpg">
+        <span class="plate__frame"><img src="images/web/Milkyway_Treeline-t.jpg" alt="The Milky Way rising above a dark treeline" loading="lazy"></span>
+        <span class="plate__id"><span class="plate__cat plate__cat--none">Wide</span><span class="plate__name">Milky Way over the Treeline</span></span>
+        <span class="plate__sub">Recent</span>
+      </button>
+
+      <button class="plate" type="button" data-filter="gear"
+        data-cat="—" data-name="The Earlier Setup" data-type="Equipment"
+        data-con="—" data-radec="—"
+        data-site="State College, PA"
+        data-gear="Star Adventurer Mini, Canon EF 200mm f/2.8L USM, stock APS-C DSLR"
+        data-exp="—"
+        data-note="The rig that took almost everything in this archive. The Star Adventurer Mini is one of the best cheap trackers going — no real trouble up to 75 s at 200mm, or three minutes at 18mm."
+        data-full="images/web/rig-f.jpg">
+        <span class="plate__frame"><img src="images/web/rig-t.jpg" alt="A star tracker and camera lens set up in a driveway at night" loading="lazy"></span>
+        <span class="plate__id"><span class="plate__cat plate__cat--none">Rig</span><span class="plate__name">The Earlier Setup</span></span>
+        <span class="plate__sub">State College, PA</span>
+      </button>
 
       <button class="plate" type="button" data-filter="nebula"
         data-cat="M42 / NGC 1977" data-name="Orion and Running Man Nebulae" data-type="Emission &amp; reflection nebulae"
@@ -356,7 +414,7 @@
 <!-- ================================ rig ================================ -->
 <section class="rig">
   <div class="wrap rig__grid">
-    <img src="images/web/rig-t.jpg" alt="The star tracker, lens and camera set up outdoors at night" loading="lazy">
+    <img src="images/web/Rig_Milkyway-f.jpg" alt="The refractor on its tracker silhouetted against the Milky Way, lit by red light" loading="lazy">
     <div>
       <p class="eyebrow">The kit</p>
       <h2 class="rig__title">A budget rig, pointed carefully</h2>
