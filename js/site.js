@@ -265,11 +265,59 @@
     Array.prototype.forEach.call(reveals, function (el) { io.observe(el); });
   }
 
+
+  /* ---------------------------- slideshow ------------------------------ */
+
+  var deck = document.getElementById("slides");
+  if (deck) {
+    var imgs = Array.prototype.slice.call(deck.querySelectorAll(".slides__img"));
+    var dots = Array.prototype.slice.call(deck.querySelectorAll(".slides__dot"));
+    var wait = parseInt(deck.dataset.interval, 10) || 5000;
+    var at = 0, timer = null, held = false, seen = true;
+
+    if (reduceMotion) deck.classList.add("is-static");
+
+    function go(next) {
+      if (next === at) return;
+      imgs[at].classList.remove("is-on");
+      dots[at].classList.remove("is-on");
+      at = (next + imgs.length) % imgs.length;
+      // re-adding the class restarts the drift on the incoming slide
+      void imgs[at].offsetWidth;
+      imgs[at].classList.add("is-on");
+      dots[at].classList.add("is-on");
+    }
+
+    function play() {
+      stop();
+      if (reduceMotion || held || !seen) return;
+      timer = setInterval(function () { go(at + 1); }, wait);
+    }
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
+
+    dots.forEach(function (d, i) {
+      d.addEventListener("click", function () { go(i); play(); });
+    });
+
+    // don't advance under the reader's cursor, or while a dot has focus
+    deck.addEventListener("mouseenter", function () { held = true; stop(); });
+    deck.addEventListener("mouseleave", function () { held = false; play(); });
+    deck.addEventListener("focusin", function () { held = true; stop(); });
+    deck.addEventListener("focusout", function () { held = false; play(); });
+
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (es) {
+        seen = es[0].isIntersecting;
+        seen ? play() : stop();
+      }, { threshold: 0.15 }).observe(deck);
+    }
+    play();
+  }
+
   /* ----------------------------- lightbox ------------------------------ */
 
   var box = document.getElementById("lightbox");
   var boxImg = box.querySelector("img");
-  var boxCap = box.querySelector(".lightbox__cap");
   var shots = Array.prototype.slice.call(document.querySelectorAll(".shot"));
   var index = -1;
 
@@ -278,7 +326,6 @@
     var fig = shots[index];
     boxImg.src = fig.dataset.full;
     boxImg.alt = fig.querySelector("img").alt;
-    boxCap.textContent = fig.dataset.caption;
     box.classList.add("is-open");
     document.body.style.overflow = "hidden";
     box.querySelector(".lightbox__close").focus();

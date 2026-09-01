@@ -175,15 +175,21 @@
         </p>
       </div>
 
-      <div class="about__photos reveal">
-        <figure>
-          <img src="images/lab-exo.jpg" alt="Kasra Sinaei working with a robot in the lab" loading="lazy">
-          <figcaption>Hardware in the loop</figcaption>
-        </figure>
-        <figure>
-          <img src="images/mit.jpg" alt="Kasra Sinaei at MIT" loading="lazy">
-          <figcaption>MIT, Cambridge</figcaption>
-        </figure>
+      <div class="slides reveal" id="slides" data-interval="5000">
+        <div class="slides__frame">
+          <img class="slides__img is-on" src="images/life/old-main.jpg" alt="Old Main at Penn State at sunset">
+          <img class="slides__img" src="images/life/lab.jpg" alt="Kasra Sinaei with a robot in the lab" loading="lazy">
+          <img class="slides__img" src="images/life/mit.jpg" alt="Kasra Sinaei on the MIT campus" loading="lazy">
+          <img class="slides__img" src="images/life/lake.jpg" alt="Black and white portrait of Kasra Sinaei by a lake" loading="lazy">
+          <img class="slides__img" src="images/life/dumbo.jpg" alt="Kasra Sinaei in Brooklyn with the Manhattan Bridge behind" loading="lazy">
+        </div>
+        <div class="slides__dots">
+          <button class="slides__dot is-on" type="button" aria-label="Show photo 1 of 5"></button>
+          <button class="slides__dot" type="button" aria-label="Show photo 2 of 5"></button>
+          <button class="slides__dot" type="button" aria-label="Show photo 3 of 5"></button>
+          <button class="slides__dot" type="button" aria-label="Show photo 4 of 5"></button>
+          <button class="slides__dot" type="button" aria-label="Show photo 5 of 5"></button>
+        </div>
       </div>
     </div>
 
@@ -207,6 +213,26 @@
         <i class="fa-solid fa-shoe-prints"></i>
         <h3>Legged locomotion</h3>
         <p>DCM gait generation and impedance control on full-size humanoid robots.</p>
+      </div>
+      <div class="focus__item reveal">
+        <i class="fa-solid fa-diagram-project"></i>
+        <h3>Agentic AI</h3>
+        <p>Long-horizon task decomposition over 3D scene graphs, executed on real manipulators.</p>
+      </div>
+      <div class="focus__item reveal">
+        <i class="fa-solid fa-arrows-spin"></i>
+        <h3>Reinforcement learning</h3>
+        <p>Policy-gradient and model-free methods, from PID self-tuning to learned controllers.</p>
+      </div>
+      <div class="focus__item reveal">
+        <i class="fa-solid fa-route"></i>
+        <h3>Motion planning</h3>
+        <p>MPPI and model predictive control for mobile manipulators in cluttered space.</p>
+      </div>
+      <div class="focus__item reveal">
+        <i class="fa-solid fa-satellite-dish"></i>
+        <h3>SLAM &amp; estimation</h3>
+        <p>LiDAR and visual-inertial odometry, Kalman filtering, and sensor fusion.</p>
       </div>
     </div>
   </div>
@@ -654,39 +680,32 @@
     </div>
 
     <div class="gallery reveal">
-      <figure class="shot shot--w2" data-full="images/astro/moon-phases.jpg" data-caption="The Moon — synodic phase sequence">
+      <figure class="shot shot--w2" data-full="images/astro/moon-phases.jpg">
         <img src="images/astro/moon-phases-thumb.jpg" alt="A sequence of the Moon through its phases, arranged in an arc" loading="lazy">
-        <figcaption>The Moon<span>Synodic phase sequence</span></figcaption>
       </figure>
 
-      <figure class="shot shot--h2" data-full="images/astro/m42-orion.jpg" data-caption="M42 &amp; NGC 1977 — Orion and Running Man nebulae">
+      <figure class="shot shot--h2" data-full="images/astro/m42-orion.jpg">
         <img src="images/astro/m42-orion-thumb.jpg" alt="The Orion Nebula in pink and blue, with the Running Man Nebula above it" loading="lazy">
-        <figcaption>M42 &middot; NGC 1977<span>Orion &amp; Running Man</span></figcaption>
       </figure>
 
-      <figure class="shot" data-full="images/astro/m81-m82.jpg" data-caption="M81 &amp; M82 — Bode's and Cigar galaxies, Ursa Major">
+      <figure class="shot" data-full="images/astro/m81-m82.jpg">
         <img src="images/astro/m81-m82-thumb.jpg" alt="Two galaxies: a face-on spiral and an edge-on starburst galaxy" loading="lazy">
-        <figcaption>M81 &middot; M82<span>Bode's &amp; Cigar galaxies</span></figcaption>
       </figure>
 
-      <figure class="shot shot--w2" data-full="images/astro/m31-andromeda.jpg" data-caption="M31 — Andromeda Galaxy, with M32 and M110">
+      <figure class="shot shot--w2" data-full="images/astro/m31-andromeda.jpg">
         <img src="images/astro/m31-andromeda-thumb.jpg" alt="The Andromeda Galaxy with its dust lanes and two satellite galaxies" loading="lazy">
-        <figcaption>M31<span>Andromeda, with M32 &amp; M110</span></figcaption>
       </figure>
 
-      <figure class="shot" data-full="images/astro/m8-m20-lagoon-trifid.jpg" data-caption="M8 &amp; M20 — Lagoon and Trifid nebulae, Sagittarius">
+      <figure class="shot" data-full="images/astro/m8-m20-lagoon-trifid.jpg">
         <img src="images/astro/m8-m20-lagoon-trifid-thumb.jpg" alt="The Lagoon Nebula and the smaller Trifid Nebula in a dense star field" loading="lazy">
-        <figcaption>M8 &middot; M20<span>Lagoon &amp; Trifid</span></figcaption>
       </figure>
 
-      <figure class="shot shot--w2" data-full="images/astro/ngc6992-veil.jpg" data-caption="NGC 6992 — Eastern Veil Nebula, Cygnus">
+      <figure class="shot shot--w2" data-full="images/astro/ngc6992-veil.jpg">
         <img src="images/astro/ngc6992-veil-thumb.jpg" alt="The filamentary red and blue arc of the Eastern Veil Nebula" loading="lazy">
-        <figcaption>NGC 6992<span>Eastern Veil</span></figcaption>
       </figure>
 
-      <figure class="shot shot--w2" data-full="images/astro/m27-dumbbell.jpg" data-caption="M27 — Dumbbell Nebula, Vulpecula">
+      <figure class="shot shot--w2" data-full="images/astro/m27-dumbbell.jpg">
         <img src="images/astro/m27-dumbbell-thumb.jpg" alt="The small teal Dumbbell Nebula amid a wide star field" loading="lazy">
-        <figcaption>M27<span>Dumbbell Nebula</span></figcaption>
       </figure>
     </div>
   </div>
@@ -744,7 +763,6 @@
   <button class="lightbox__close" aria-label="Close">&times;</button>
   <div>
     <img src="" alt="">
-    <p class="lightbox__cap"></p>
   </div>
 </div>
 
