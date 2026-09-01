@@ -1,1056 +1,748 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Personal Page</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kasra Sinaei — Safety-Critical Control &amp; Robot Learning</title>
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+<meta name="description" content="Kasra Sinaei is a PhD candidate in Electrical Engineering at Penn State working on safety-critical control, control barrier functions, and vision-language-action models for robotics.">
+<meta name="author" content="Kasra Sinaei">
+<meta name="keywords" content="Kasra Sinaei, control barrier functions, safety-critical control, robotics, physical AI, vision language action, adaptive control, legged locomotion, Penn State">
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Kasra Sinaei — Safety-Critical Control &amp; Robot Learning">
+<meta property="og:description" content="PhD candidate building provable safety into modern robot learning: barrier functions, adaptive control, and vision-language-action models.">
+<meta property="og:url" content="https://kassra-sinaei.github.io/">
+<meta property="og:image" content="https://kassra-sinaei.github.io/images/hero-lab.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kasra Sinaei — Safety-Critical Control &amp; Robot Learning">
+<meta name="twitter:description" content="PhD candidate building provable safety into modern robot learning.">
+<meta name="twitter:image" content="https://kassra-sinaei.github.io/images/hero-lab.jpg">
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-	<!-- Custom visual refinements -->
-	<link rel="stylesheet" href="css/custom.css">
-	<!-- Better Icons -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="canonical" href="https://kassra-sinaei.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0A0E1A">
+<script>document.documentElement.className += " js";</script>
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-	
-	<meta name="google-site-verification" content="K9kVIlOOcglLBqM5PnVGpZbUcNFGUBR-dmWTqxBFCDY" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/site.css">
 
-	</head>
-	<body>
-	<div id="colorlib-page">
-		<div class="container-wrap">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-			<div class="text-center">
-				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
-				<h1 id="colorlib-logo"><a href="index.html">Kasra Sinaei</a></h1>
-				<span class="position"><a href="#">Graduate Researcher</a> at Penn State</span>
-			</div>
-			<nav id="colorlib-main-menu" role="navigation" class="navbar">
-				<div id="navbar" class="collapse">
-					<ul>
-						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-						<li><a href="#" data-nav-section="about">About</a></li>
-						<!-- <li><a href="#" data-nav-section="services">Services</a></li> -->
-						<li><a href="#" data-nav-section="pubs">Publications</a></li>
-						<li><a href="#" data-nav-section="education">Education</a></li>
-						<li><a href="#" data-nav-section="experience">Experience</a></li>
-						<li><a href="#" data-nav-section="work">Work</a></li>
-						<li><a href="#" data-nav-section="ap_blog">Astrophotography Blog</a></li>
-						<li><a href="#" data-nav-section="contact">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
+<meta name="google-site-verification" content="K9kVIlOOcglLBqM5PnVGpZbUcNFGUBR-dmWTqxBFCDY">
 
-			<div class="colorlib-footer">
-				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved. Made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span> <span>Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a></span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></span></small></p>
-				<ul>
-					<li><a href="https://www.facebook.com/Kasra78/"><i class="icon-facebook2"></i></a></li>
-					<li><a href="#"><i class="icon-twitter2"></i></a></li>
-					<li><a href="#"><i class="icon-instagram"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/kasra-s-496843a2/"><i class="icon-linkedin2"></i></a></li>
-				</ul>
-			</div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kasra Sinaei",
+  "url": "https://kassra-sinaei.github.io/",
+  "image": "https://kassra-sinaei.github.io/images/headshot.jpg",
+  "jobTitle": "PhD Candidate, Electrical Engineering",
+  "email": "mailto:kasra@psu.edu",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "The Pennsylvania State University"
+  },
+  "knowsAbout": [
+    "Control Barrier Functions",
+    "Safety-Critical Control",
+    "Adaptive Control",
+    "Robotics",
+    "Physical AI",
+    "Vision-Language-Action Models",
+    "Legged Locomotion"
+  ],
+  "sameAs": [
+    "https://github.com/Kassra-sinaei",
+    "https://www.linkedin.com/in/kasra-s-496843a2/"
+  ]
+}
+</script>
+</head>
 
-		</aside>
+<body>
+<a class="skip-link" href="#hero">Skip to content</a>
 
-		<div id="colorlib-main">
-			<section id="colorlib-hero" class="js-fullheight" data-section="home">
-				<div class="flexslider js-fullheight">
-					<ul class="slides">
-				   	<li style="background-image: url(images/img_bg_2.jpg);">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-					   				<div class="slider-text-inner js-fullheight">
-					   					<div class="desc">
-						   					<h1>Hi! <br>I'm Kasra</h1>
-						   					<h7>Electrical Engineering Ph.D. and Mechanical Engineering BSc.</a></h7>
-												<p><a class="btn btn-primary btn-learn" href="cv.pdf">Download CV <i class="icon-download4"></i></a></p>
-											</div>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
-				   	<li style="background-image: url(images/img_bg_1.jpg);">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-					   				<div class="slider-text-inner">
-					   					<div class="desc">
-						   					<h8>Robotic Software Developer and Researcher</h8>
-												<h7>Interested in Robotics, Control Theory, Machine Learning and Mechatronics.</a></h7>
-												<p><a class="btn btn-primary btn-learn" href="cv.pdf">Download CV <i class="icon-download4"></i></a></p>
-											</div>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
-				  	</ul>
-			  	</div>
-			</section>
+<!-- mobile bar -->
+<div class="topbar">
+  <a class="topbar__name" href="#hero">Kasra Sinaei</a>
+  <button class="topbar__toggle" id="navToggle" aria-expanded="false" aria-controls="rail" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+<div class="scrim" id="scrim"></div>
 
-			<section class="colorlib-about" data-section="about">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="col-md-12">
-									<div class="about-desc">
-										<span class="heading-meta">About Me</span>
-										<h2 class="colorlib-heading">Who Am I?</h2>
-										<p><strong>Hi I'm Kasra Sinaei</strong> I am pursuing my graduate studies in the field of <b>Control</b>, <b>Robotics</b> and <b>Physical AI</b> at the Pennsylvania State Univrsity. I am conducting research on <b>Safety Control</b> via Barrier Functions and I develop methods to integrate <b>Safety</b> with model-free <b>learning algorithms</b> and emerging <b>Vision Language Action Models (VLA)</b>. My undergrad research was focused on Legged Locomotion and humanoid gait control.</p>
-										<p>I have studied and researched Control Theory, Optimization, Non-linear Systems, Physical AI and Robotics. I am a proficient Robotic software developer and I have advanced programming skills in CPP, Python, MATLAB and C#. </p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-									<div class="services color-1">
-										<span class="icon2"><i class="fas fa-sliders-h"></i></span>
-										<h3>Control Theory</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-									<div class="services color-2">
-										<span class="icon2"><i class="fas fa-robot"></i></span>
-										<h3>Robotics</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-									<div class="services color-4">
-										<span class="icon2"><i class="fas fa-microchip"></i></span>
-										<h3>Physical AI</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-									<div class="services color-3">
-										<span class="icon2"><i class="fas fa-code"></i></span>
-										<h3>Learning Controllers</h3>
-									</div>
-								</div>
-							</div>
-							<!-- <div class="row">
-								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-									<div class="hire">
-										<h2>I am happy to know you <br>that 300+ projects done sucessfully!</h2>
-										<a href="#" class="btn-hire">Hire me</a>
-									</div>
-								</div>
-							</div> -->
-						</div>
-					</div>
-				</div>
-			</section>
+<!-- ============================ left rail ============================ -->
+<aside class="rail" id="rail">
+  <div class="rail__id">
+    <img class="rail__photo" src="images/headshot.jpg" alt="Kasra Sinaei" width="96" height="96">
+    <h1 class="rail__name"><a href="#hero">Kasra Sinaei</a></h1>
+    <p class="rail__role">PhD Candidate<br>Electrical Engineering, Penn State</p>
+  </div>
 
+  <nav class="rail__nav" aria-label="Sections">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#astro">Astrophotography</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-			
-			<!-- <section class="colorlib-services" data-section="services">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">What I do?</span>
-							<h2 class="colorlib-heading">Here are some of my expertise</h2>
-						</div>
-					</div>
-					<div class="row row-pt-md">
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-1">
-								<span class="icon">
-									<i class="icon-bulb"></i>
-								</span>
-								<div class="desc">
-									<h3>Innovative Ideas</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-2">
-								<span class="icon">
-									<i class="icon-data"></i>
-								</span>
-								<div class="desc">
-									<h3>Software</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-3">
-								<span class="icon">
-									<i class="icon-phone3"></i>
-								</span>
-								<div class="desc">
-									<h3>Application</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-4">
-								<span class="icon">
-									<i class="icon-layers2"></i>
-								</span>
-								<div class="desc">
-									<h3>Graphic Design</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-5">
-								<span class="icon">
-									<i class="icon-data"></i>
-								</span>
-								<div class="desc">
-									<h3>Software</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-6">
-								<span class="icon">
-									<i class="icon-phone3"></i>
-								</span>
-								<div class="desc">
-									<h3>Application</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section> -->
-			
-			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
-				<div class="overlay"></div>
-				<div class="colorlib-narrow-content">
-					<div class="row">
-					</div>
-					<div class="row">
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="1" data-refresh-interval="1"></span>
-							<span class="colorlib-counter-label">Peer Reviewed Publications</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="6" data-speed="1" data-refresh-interval="1"></span>
-							<span class="colorlib-counter-label">Conference presentations</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="25" data-speed="1" data-refresh-interval="1"></span>
-							<span class="colorlib-counter-label">Paper Citations</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="4" data-speed="1" data-refresh-interval="5"></span>
-							<span class="colorlib-counter-label">Internship & Co-op</span>
-						</div>
-					</div>
-				</div>
-			</div>
+  <a class="rail__cv" href="cv.pdf"><i class="fa-regular fa-file-lines"></i> Download CV</a>
 
-			<!-- <section class="colorlib-skills" data-section="Publications">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Publications</span>
-							<h2 class="colorlib-heading animate-box">Papers</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Photoshop</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
-								    <span>75%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>jQuery</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:60%">
-								    <span>60%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>HTML5</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-								    <span>85%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>CSS3</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-								    <span>90%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>WordPress</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-								    <span>70%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>SEO</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-								    <span>80%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section> -->
+  <ul class="rail__social">
+    <li><a href="https://github.com/Kassra-sinaei" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/kasra-s-496843a2/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a></li>
+    <li><a href="https://www.instagram.com/apsc_astro/" aria-label="Astrophotography on Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a href="mailto:kasra@psu.edu" aria-label="Email"><i class="fa-regular fa-envelope"></i></a></li>
+  </ul>
 
-			<div class="colorlib-narrow-content" data-section="pubs">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-						<span class="heading-meta">Publications</span>
-						<h2 class="colorlib-heading animate-box">Papers</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-					 <div class="timeline-centered">
-						<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-							<div class="timeline-entry-inner">
+  <p class="rail__legal">&copy; <span class="year">2026</span> Kasra Sinaei</p>
+</aside>
 
-							   <div class="timeline-icon color-2">
-								  <i class="icon-pen2"></i>
-							   </div>
+<main class="main" id="top">
 
-							   <div class="timeline-label">
-								  <h2><a href="#"> Control Barrier Functions for Adaptive Stabilization of Fully Unknown Underactuated Nonlinear Systems </a> <span>2027</span></h2>
-								  <p>IEEE Conference on Decision and Control (CDC, under review)</p>
-							   </div>
-							</div>
-						 </article>
-						<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-							<div class="timeline-entry-inner">
+<!-- ============================== hero ============================== -->
+<section class="hero" id="hero">
+  <div class="hero__photo" aria-hidden="true"></div>
+  <canvas class="hero__canvas" id="field" aria-hidden="true"></canvas>
 
-							   <div class="timeline-icon color-3">
-								  <i class="icon-pen2"></i>
-							   </div>
+  <div class="hero__inner">
+    <div class="hero__text">
+      <p class="eyebrow eyebrow--dark">Control &middot; Robotics &middot; Physical AI</p>
+      <h2 class="hero__title"><em>Provable safety</em><br>for robots that learn.</h2>
+      <p class="hero__lede">
+        I'm Kasra Sinaei, a PhD candidate in Electrical Engineering at Penn State working where
+        control theory meets modern robot learning. I build <strong>control barrier functions</strong>
+        into adaptive controllers and <strong>vision-language-action models</strong>, so a robot can
+        keep learning without ever leaving its safe set.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#research">Read the research <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="btn btn--ghost" href="cv.pdf"><i class="fa-regular fa-file-lines"></i> Download CV</a>
+      </div>
+      <ul class="hero__meta">
+        <li>Now &middot; <b>AI Research Scientist Intern, Chewy Robotics</b></li>
+        <li>Lab &middot; <b>CARL, Penn State</b></li>
+        <li><b>10</b> papers &middot; ACC, RA-L, IROS, Humanoids</li>
+      </ul>
+    </div>
+  </div>
 
-							   <div class="timeline-label">
-								  <h2><a href="#"> Strategic and Reactive Stream Partitioning for Path-Efficient LiDAR-Based Obstacle Avoidance </a> <span>2026</span></h2>
-								  <p>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
-							   </div>
-							</div>
-						 </article>
-						 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-							<div class="timeline-entry-inner">
+  <p class="hero__legend">
+    <i class="k-flux"></i>closed-loop trajectory<br>
+    <i class="k-barrier"></i>barrier <em>h(x) = 0</em><br>
+    live CBF-QP safety filter
+  </p>
+</section>
 
-							   <div class="timeline-icon color-4">
-								  <i class="icon-pen2"></i>
-							   </div>
+<!-- ============================== about ============================== -->
+<section class="section" id="about">
+  <div class="section__inner">
+    <div class="section__head reveal">
+      <p class="eyebrow">About</p>
+      <h2 class="section__title">Control theory, held to a robot's standards</h2>
+    </div>
 
-							   <div class="timeline-label">
-								  <h2><a href="#"> Safe Vision Language Action Models Via Barrier Enhanced Flow Matching </a> <span>2026</span></h2>
-								  <p>IEEE Robotics and Automation Letters (RA-L, under review)</p>
-							   </div>
-							</div>
-						 </article>
-						<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-							<div class="timeline-entry-inner">
+    <div class="about__grid">
+      <div class="about__prose reveal">
+        <p>
+          I am pursuing graduate studies in <strong>control</strong>, <strong>robotics</strong> and
+          <strong>physical AI</strong> at the Pennsylvania State University, where I research
+          <strong>safety-critical control</strong> via barrier functions. My work develops methods
+          that fuse formal safety guarantees with model-free learning algorithms and the emerging
+          class of vision-language-action models &mdash; the goal being a robot whose behaviour you
+          can bound before you deploy it, not after. My undergraduate research was on legged
+          locomotion and humanoid gait control.
+        </p>
+        <p>
+          Along the way I have studied and published on control theory, optimization, nonlinear
+          systems and robotics. I build the software too: I work daily in C++, Python, MATLAB and
+          C#, on real hardware &mdash; Unitree Go1 quadrupeds, Quanser QArm manipulators, SO-101
+          arms, and full-size humanoids.
+        </p>
+        <p>
+          Outside the lab I photograph deep-sky objects. It is the same problem, really: a long
+          integration, a lot of noise, and a signal that only appears if you are disciplined about
+          the error.
+        </p>
+      </div>
 
-							   <div class="timeline-icon color-5">
-								  <i class="icon-pen2"></i>
-							   </div>
+      <div class="about__photos reveal">
+        <figure>
+          <img src="images/lab-exo.jpg" alt="Kasra Sinaei working with a robot in the lab" loading="lazy">
+          <figcaption>Hardware in the loop</figcaption>
+        </figure>
+        <figure>
+          <img src="images/mit.jpg" alt="Kasra Sinaei at MIT" loading="lazy">
+          <figcaption>MIT, Cambridge</figcaption>
+        </figure>
+      </div>
+    </div>
 
-							   <div class="timeline-label">
-								  <h2><a href="#"> Safe Adaptive Control with Vanishing Conservativeness for Robotic Systems with Unknown Dynamics Via Barrier Functions </a> <span>2026</span></h2>
-								  <p>IEEE Robotics and Automation Letters (RA-L)</p>
-							   </div>
-							</div>
-						 </article>
-						<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-							<div class="timeline-entry-inner">
+    <div class="focus">
+      <div class="focus__item reveal">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Safety-critical control</h3>
+        <p>Control barrier functions, forward invariance, and recovery once the safe set is left.</p>
+      </div>
+      <div class="focus__item reveal">
+        <i class="fa-solid fa-sliders"></i>
+        <h3>Adaptive &amp; robust control</h3>
+        <p>Guarantees that hold while the parameters are still converging, not only after.</p>
+      </div>
+      <div class="focus__item reveal">
+        <i class="fa-solid fa-robot"></i>
+        <h3>Physical AI</h3>
+        <p>VLA policies, flow matching, and 3D scene graphs driving real manipulators.</p>
+      </div>
+      <div class="focus__item reveal">
+        <i class="fa-solid fa-shoe-prints"></i>
+        <h3>Legged locomotion</h3>
+        <p>DCM gait generation and impedance control on full-size humanoid robots.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-							   <div class="timeline-icon color-1">
-								  <i class="icon-pen2"></i>
-							   </div>
+<!-- ============================ research ============================= -->
+<section class="section" id="research">
+  <div class="section__inner">
+    <div class="section__head reveal">
+      <p class="eyebrow">Research</p>
+      <h2 class="section__title">Publications</h2>
+      <p class="section__lede">
+        Peer-reviewed work on safety-critical control and robot learning. Several papers have
+        accompanying project pages with video, derivations and hardware results.
+      </p>
+    </div>
 
-							   <div class="timeline-label">
-								  <h2><a href="#"> Motion Planning for Mobile Manipulators Navigating Doorways via Model Predictive Path Integral </a> <span>2026</span></h2>
-								  <p>Modeling Estimation and Control Conference (MECC), ASME</p>
-							   </div>
-							</div>
-						 </article>
-						<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-							<div class="timeline-entry-inner">
+    <div class="pubs">
+      <article class="pub reveal">
+        <p class="pub__year">2027</p>
+        <div>
+          <h3 class="pub__title">Control Barrier Functions for Adaptive Stabilization of Fully Unknown Underactuated Nonlinear Systems</h3>
+          <p class="pub__venue">IEEE Conference on Decision and Control (CDC)</p>
+          <div class="pub__tags"><span class="tag tag--review">Under review</span></div>
+        </div>
+      </article>
 
-							   <div class="timeline-icon color-2">
-								  <i class="icon-pen2"></i>
-							   </div>
+      <article class="pub reveal">
+        <p class="pub__year">2026</p>
+        <div>
+          <h3 class="pub__title">Strategic and Reactive Stream Partitioning for Path-Efficient LiDAR-Based Obstacle Avoidance</h3>
+          <p class="pub__venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
+          <div class="pub__tags"><span class="tag">Accepted</span></div>
+        </div>
+      </article>
 
-							   <div class="timeline-label">
-								  <h2><a href="#">Safe Robust Control of Nonlinear Systems with Uncertain Regressor and Parameter Vector </a> <span>2025</span></h2>
-								  <p>9th IEEE Conference on Control Technology and Applications (CCTA)</p>
-							   </div>
-							</div>
-						 </article>
-						 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-							<div class="timeline-entry-inner">
+      <article class="pub reveal">
+        <p class="pub__year">2026</p>
+        <div>
+          <h3 class="pub__title">Safe Vision-Language-Action Models via Barrier-Enhanced Flow Matching</h3>
+          <p class="pub__venue">IEEE Robotics and Automation Letters (RA-L)</p>
+          <div class="pub__tags">
+            <span class="tag tag--review">Under review</span>
+            <a class="tag" href="https://safe-vla-fmcbf.netlify.app" target="_blank" rel="noopener">Project page</a>
+          </div>
+        </div>
+      </article>
 
-							   <div class="timeline-icon color-3">
-								  <i class="icon-pen2"></i>
-							   </div>
+      <article class="pub reveal">
+        <p class="pub__year">2026</p>
+        <div>
+          <h3 class="pub__title">Safe Adaptive Control with Vanishing Conservativeness for Robotic Systems with Unknown Dynamics via Barrier Functions</h3>
+          <p class="pub__venue">IEEE Robotics and Automation Letters (RA-L)</p>
+          <div class="pub__tags">
+            <span class="tag">Published</span>
+            <a class="tag" href="https://safe-adaptive-control.netlify.app/" target="_blank" rel="noopener">Project page</a>
+          </div>
+        </div>
+      </article>
 
-							   <div class="timeline-label">
-								  <h2><a href="#">Safety-Critical Position Control of Robots: A Model-Free Approach   </a> <span>2025</span></h2>
-								  <p>American Control Conference, IEEE (ACC)</p>
-							   </div>
-							</div>
-						 </article>
-						 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-							<div class="timeline-entry-inner">
+      <article class="pub reveal">
+        <p class="pub__year">2026</p>
+        <div>
+          <h3 class="pub__title">Motion Planning for Mobile Manipulators Navigating Doorways via Model Predictive Path Integral</h3>
+          <p class="pub__venue">ASME Modeling, Estimation and Control Conference (MECC)</p>
+          <div class="pub__tags">
+            <span class="tag">Published</span>
+            <a class="tag" href="http://optimal-door-planning.netlify.app/" target="_blank" rel="noopener">Project page</a>
+          </div>
+        </div>
+      </article>
 
-							   <div class="timeline-icon color-4">
-								  <i class="icon-pen2"></i>
-							   </div>
+      <article class="pub reveal">
+        <p class="pub__year">2025</p>
+        <div>
+          <h3 class="pub__title">Safe Robust Control of Nonlinear Systems with Uncertain Regressor and Parameter Vector</h3>
+          <p class="pub__venue">9th IEEE Conference on Control Technology and Applications (CCTA)</p>
+          <div class="pub__tags">
+            <span class="tag">Published</span>
+            <a class="tag" href="http://safe-robust-nonlinear-control.netlify.app/" target="_blank" rel="noopener">Project page</a>
+          </div>
+        </div>
+      </article>
 
-							   <div class="timeline-label">
-								  <h2><a href="#">Online Bipedal Locomotion Adaptation for Stepping on Obstacles Using a Novel Foot Sensor</a> <span>2022</span></h2>
-								  <p>IEEE-RAS 21st International Conference on Humanoid Robots (Humanoids)</p>
-							   </div>
-							</div>
-						 </article>
-						 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-							<div class="timeline-entry-inner">
+      <article class="pub reveal">
+        <p class="pub__year">2025</p>
+        <div>
+          <h3 class="pub__title">Safety-Critical Position Control of Robots: A Model-Free Approach</h3>
+          <p class="pub__venue">American Control Conference (ACC)</p>
+          <div class="pub__tags">
+            <span class="tag">Published</span>
+            <a class="tag" href="http://safe-position-control-robot.netlify.app/" target="_blank" rel="noopener">Project page</a>
+          </div>
+        </div>
+      </article>
 
-							   <div class="timeline-icon color-5">
-								  <i class="icon-pen2"></i>
-							   </div>
+      <article class="pub reveal">
+        <p class="pub__year">2022</p>
+        <div>
+          <h3 class="pub__title">Online Bipedal Locomotion Adaptation for Stepping on Obstacles Using a Novel Foot Sensor</h3>
+          <p class="pub__venue">IEEE-RAS 21st International Conference on Humanoid Robots (Humanoids)</p>
+          <div class="pub__tags"><span class="tag">Published</span></div>
+        </div>
+      </article>
 
-							   <div class="timeline-label">
-								  <h2><a href="#">Bipedal Locomotion Optimization by Exploitation of the Full Dynamics in DCM Trajectory Planning</a> <span>2021</span></h2>
-								  <p>9th RSI International Conference on Robotics and Mechatronics (ICRoM)</p>
-							   </div>
-							</div>
-						 </article>
-						 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-							<div class="timeline-entry-inner">
+      <article class="pub reveal">
+        <p class="pub__year">2021</p>
+        <div>
+          <h3 class="pub__title">Bipedal Locomotion Optimization by Exploitation of the Full Dynamics in DCM Trajectory Planning</h3>
+          <p class="pub__venue">9th RSI International Conference on Robotics and Mechatronics (ICRoM)</p>
+          <div class="pub__tags"><span class="tag">Published</span></div>
+        </div>
+      </article>
 
-							   <div class="timeline-icon color-1">
-								  <i class="icon-pen2"></i>
-							   </div>
+      <article class="pub reveal">
+        <p class="pub__year">2021</p>
+        <div>
+          <h3 class="pub__title">PID Controller Tuning with Deep Reinforcement Learning Policy Gradient Methods</h3>
+          <p class="pub__venue">29th International Conference of the Iranian Society of Mechanical Engineers (ISME)</p>
+          <div class="pub__tags">
+            <span class="tag">Published</span>
+            <a class="tag" href="https://www.researchgate.net/profile/Kasra_Sinaei/publication/350755668_PID_Controller_Tuning_with_Deep_Reinforcement_Learning_Policy_Gradient_Methods/links/60702e49299bf1c911bab320/PID-Controller-Tuning-with-Deep-Reinforcement-Learning-Policy-Gradient-Methods.pdf" target="_blank" rel="noopener">PDF</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-							   <div class="timeline-label">
-								  <h2><a href="#">PID Controller Tuning with Deep Reinforcement Learning Policy Gradient Methods</a> <span>2021</span></h2>
-								  <p>29th Intermational Conference of Iranian Society of Mechanical Engineers</p>
-							   </div>
-							</div>
-						 </article>
-					  </div>
-				   </div>
-			   </div>
-			</div>
+<!-- =========================== experience =========================== -->
+<section class="section" id="experience">
+  <div class="section__inner">
+    <div class="section__head reveal">
+      <p class="eyebrow">Experience</p>
+      <h2 class="section__title">Where the work happened</h2>
+    </div>
 
-			<section class="colorlib-education" data-section="education">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Education</span>
-							<h2 class="colorlib-heading animate-box">Education</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<div class="fancy-collapse-panel">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingOne">
-									        <h4 class="panel-title">
-									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Ph.D. Electrical and Electronics Engineering
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-									         <div class="panel-body">
-									            <div class="row">
-										      		<div class="col-md-6">
-										      			<p> Expecting graduation on Spring 2027. <br>Current GPA: 3.9 </p>
-										      		</div>
-													<div class="col-md-6">
-														<p> Advisor: Dr. Donald E. Ebeigbe </p>
-													</div>
-										      	</div>
-									         </div>
-									    </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingTwo">
-									        <h4 class="panel-title">
-									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"> MSc. Electrical and Electronics Engineering
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpane2" aria-labelledby="headingTwo">
-											<div class="panel-body">
-											   <div class="row">
-													 <div class="col-md-6">
-														 <p> Graduated on May 2024. <br>Current GPA: 3.84 </p>
-													 </div>
-													 <div class="col-md-6">
-													   <p> Advisor: Dr. Donald E. Ebeigbe </p>
-												   </div>
-												 </div>
-											</div>
-									   </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingThree">
-									        <h4 class="panel-title">
-									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree"> BSc. Mechanical Engineering
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseThree" class="panel-collapse collapse in" role="tabpane3" aria-labelledby="headingThree">
-									         <div class="panel-body">
-									            <div class="row">
-										      		<div class="col-md-6">
-										      			<p> Graduated on February of 2022. <br>Cumulitive GPA: 17/20 </p>
-										      		</div>
-													  <div class="col-md-6">
-														<p> Advisor: Dr. Ehsan Hosseinian </p>
-													</div>
-										      	</div>
-									         </div>
-									    </div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+    <div class="timeline">
+      <article class="tl tl--now reveal">
+        <div class="tl__head">
+          <h3 class="tl__role">AI Research Scientist Intern, <a class="tl__org" href="https://careers.chewy.com/us/en/home" target="_blank" rel="noopener">Chewy</a></h3>
+          <span class="tl__when">2026</span>
+        </div>
+        <p class="tl__body">
+          Developing semantic safety filters for mobile manipulators driven by physical-AI policies
+          at Chewy Robotics Lab. I use 3D scene graphs to retrieve semantic context from the
+          environment and deploy vision-language-action models for long-horizon warehouse tasks.
+        </p>
+      </article>
 
-			<section class="colorlib-experience" data-section="experience">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Experience</span>
-							<h2 class="colorlib-heading animate-box">Work Experience</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-				         <div class="timeline-centered">
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
+      <article class="tl reveal">
+        <div class="tl__head">
+          <h3 class="tl__role">Robotic Software Engineer Intern, <a class="tl__org" href="https://alpha-z.ai" target="_blank" rel="noopener">AlphaZ</a></h3>
+          <span class="tl__when">2025</span>
+        </div>
+        <p class="tl__body">
+          Whole-body control and planning for a humanoid robot with two 6-DoF arms on a
+          differential-drive base, plus perception and object detection. A rare chance to build
+          robot software that combines modern learning algorithms with classical control theory.
+        </p>
+      </article>
 
-					               <div class="timeline-icon color-5">
-					                  <i class="icon-pen2"></i>
-					               </div>
+      <article class="tl reveal">
+        <div class="tl__head">
+          <h3 class="tl__role">Graduate Researcher, <span class="tl__org">CARL &mdash; Penn State</span></h3>
+          <span class="tl__when">2022 &ndash; present</span>
+        </div>
+        <p class="tl__body">
+          Control and Robotics Lab, Department of Electrical Engineering. We develop smart
+          controllers and find formal proofs of safety and stability across a range of settings,
+          validated on Unitree Go1 quadrupeds and Quanser QArm manipulators.
+        </p>
+      </article>
 
-					               <div class="timeline-label">
-					                  <h2><a href="#">Chewy - AI Research Scientist Intern</a> <span>2026</span></h2>
-					                  <p> I am interning at <a href="https://careers.chewy.com/us/en/home">Chewy</a> Robotics Lab, developing semantic safety filters for mobile manipulators powered by physical AI policies. I leverage 3D scene graphs to retrieve semantic information from the environment and deploy Vision-Language-Action models for long-horizon warehouse tasks. </p>
-					               </div>
-					            </div>
-					         </article>
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
+      <article class="tl reveal">
+        <div class="tl__head">
+          <h3 class="tl__role">Undergraduate Research Assistant, <a class="tl__org" href="https://cast-tech.ir/" target="_blank" rel="noopener">CAST</a></h3>
+          <span class="tl__when">2019 &ndash; 2022</span>
+        </div>
+        <p class="tl__body">
+          Member of the Dynamics and Control group at the Center of Advanced Systems and Technology,
+          working on humanoid gait. The team designed and fabricated four full-size humanoid robots;
+          I worked on gait pattern generation and dynamic walking. See the
+          <a href="https://surenahumanoid.com/" target="_blank" rel="noopener">Surena humanoid project</a>.
+        </p>
+      </article>
 
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-pen2"></i>
-					               </div>
+      <article class="tl reveal">
+        <div class="tl__head">
+          <h3 class="tl__role">Summer Intern, <span class="tl__org">MEWE</span></h3>
+          <span class="tl__when">2018, 2019</span>
+        </div>
+        <p class="tl__body">
+          Two consecutive summers at an engineering consultancy in Tehran, learning drafting,
+          mechanical design and project management.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
 
-					               <div class="timeline-label">
-					                  <h2><a href="#">Alphaz - Robotic Software Engineer Intern</a> <span>2025</span></h2>
-					                  <p>I joined <a href="https://alpha-z.ai">Alphaz</a> as an intern in 2025. I have been Working on whole-body-control and planning of a humanoid robot with two 6-DoF arm and a differential-drive mobile base. I also worked on the robot perception and object detection. A great opportunity to build robotic softwares with a combination of modern learning algorithms and classic control theories.</p>
-					               </div>
-					            </div>
-					         </article>
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
+<!-- ============================ projects ============================ -->
+<section class="section" id="projects">
+  <div class="section__inner">
+    <div class="section__head reveal">
+      <p class="eyebrow">Projects</p>
+      <h2 class="section__title">Things I built</h2>
+      <p class="section__lede">
+        Research prototypes, course work and open source. Most link to a write-up or a repository.
+      </p>
+    </div>
 
-					               <div class="timeline-icon color-2">
-					                  <i class="icon-pen2"></i>
-					               </div>
+    <div class="projects">
 
-					               <div class="timeline-label">
-					                  <h2><a href="#">PSU Graduate Researcher</a> <span>2022-Now</span></h2>
-					                  <p>Graduate researcher at CARL (Control and Robotics Lab) located in the Electrical Engineering department of Penn State University. Main focus of our work is towards developing smart controllers and finding formal proof for safety and stability in different settings. We use Unitree Go1 robots and Quanser Q-Arm robot for our experiments. </p>
-					               </div>
-					            </div>
-					         </article>
-							 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
+      <article class="card reveal">
+        <div class="card__media" style="background-image:url(images/img-15.png)"></div>
+        <div class="card__body">
+          <h3 class="card__title">Manipulator teleoperation from a smartphone</h3>
+          <p class="card__text">
+            Foundation-model policies need a lot of demonstrations. This app turns a phone into a
+            6-DoF teleoperation device using ARCore's built-in VIO, streaming expert input to the
+            robot controller over WebRTC and low-latency UDP.
+          </p>
+          <div class="card__links">
+            <a href="https://github.com/Kassra-sinaei/ArTeleop" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repository</a>
+          </div>
+        </div>
+      </article>
 
-					               <div class="timeline-icon color-3">
-					                  <i class="icon-pen2"></i>
-					               </div>
+      <article class="card reveal">
+        <div class="card__media" style="background-image:url(images/img-14.png)"></div>
+        <div class="card__body">
+          <h3 class="card__title">Safe flow matching for vision-language-action models</h3>
+          <p class="card__text">
+            Rather than filtering a VLA's output after the fact, this work embeds a barrier
+            constraint directly into the denoising process, giving SmolVLA and &pi;-0 formal safety
+            without retraining or safety-labelled data.
+          </p>
+          <div class="card__links">
+            <a href="https://safe-vla-fmcbf.netlify.app" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Project page</a>
+          </div>
+        </div>
+      </article>
 
-					               <div class="timeline-label">
-					                  <h2><a href="#">CAST Undergrad Research Assistant</a> <span>2019-2022</span></h2>
-					                  <p>I was memeber of Dynamic and Control group at Center of Advanced Systems and Technology (<a href="https://cast-tech.ir/">CAST</a>). The group was working on humanoid robot gait. Our team successfully designed and fabricated 4 (soon to be 5) full-size humanoid robots. I was working on gait pattern generation and enhancing dnamic walking of the robot. Check out <a href="https://surenahumanoid.com/">Surena Humanoid website</a> for latest updates on this project.</p>
-					               </div>
-					            </div>
-					         </article>
-							 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
+      <article class="card reveal">
+        <div class="card__media" style="background-image:url(images/img-13.png)"></div>
+        <div class="card__body">
+          <h3 class="card__title">Safe parameter learning for adaptive controllers</h3>
+          <p class="card__text">
+            Adaptive controllers are hardest to trust before their parameters converge. This robust
+            adaptive controller shapes the weight update itself so safety holds throughout the
+            learning transient, not just at the limit.
+          </p>
+          <div class="card__links">
+            <a href="https://safe-adaptive-control.netlify.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Project page</a>
+          </div>
+        </div>
+      </article>
 
-					               <div class="timeline-icon color-4">
-					                  <i class="icon-pen2"></i>
-					               </div>
+      <article class="card reveal">
+        <div class="card__media" style="background-image:url(images/img-11.png)"></div>
+        <div class="card__body">
+          <h3 class="card__title">Door opening with mobile manipulators</h3>
+          <p class="card__text">
+            Built at AlphaZ Robotics: an MPPI planner that lets a mobile manipulator traverse
+            varied doors across different environments, coupling base motion and arm contact in one
+            optimisation.
+          </p>
+          <div class="card__links">
+            <a href="http://optimal-door-planning.netlify.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Project page</a>
+          </div>
+        </div>
+      </article>
 
-					               <div class="timeline-label">
-					                  <h2><a href="#">MEWE Summer Intern</a> <span>2018, 2019</span></h2>
-					                  <p>I joined an Engineering consultant group based in Tehran for two consecutive summers. I learned basics of engineering, drafting, mechanical design and project management. </p>
-					               </div>
-					            </div>
-					         </article>
-					      </div>
-					   </div>
-				   </div>
-				</div>
-			</section>
+      <article class="card reveal">
+        <div class="card__media" style="background-image:url(images/img-10.png)"></div>
+        <div class="card__body">
+          <h3 class="card__title">Safety-critical control with barrier functions</h3>
+          <p class="card__text">
+            Extending control barrier functions to the awkward cases: what happens when the system
+            has already left the safe set, and how it recovers. Includes model-free safety-critical
+            control of complex kinematic and kinetic systems.
+          </p>
+          <div class="card__links">
+            <a href="http://safe-position-control-robot.netlify.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Project page</a>
+          </div>
+        </div>
+      </article>
 
-			<section class="colorlib-work" data-section="work">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Work</span>
-							<h2 class="colorlib-heading animate-box">Open Source Projects</h2>
-						</div>
-					</div>
-					
-					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-						<div class="col-md-12" style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
-							<a href="https://github.com/Kassra-sinaei?tab=achievements" target="_blank" rel="noopener noreferrer">
-								<img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" alt="Pull Shark" title="Pull Shark" style="width: 44px; height: 44px; border-radius: 10px;">
-							</a>
-							<a href="https://github.com/Kassra-sinaei?tab=achievements" target="_blank" rel="noopener noreferrer">
-								<img src="https://github.githubassets.com/images/modules/profile/achievements/starstruck-default.png" alt="Starstruck" title="Starstruck" style="width: 44px; height: 44px; border-radius: 10px;">
-							</a>
-							<a href="https://github.com/Kassra-sinaei?tab=followers" target="_blank" rel="noopener noreferrer">
-								<img src="https://img.shields.io/github/followers/Kassra-sinaei?style=for-the-badge&logo=github&label=Followers" alt="GitHub Followers" title="GitHub Followers" style="height: 32px;">
-							</a>
-						</div>
-					</div>
-					
-					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-						<!-- <div class="col-md-12">
-							<p class="work-menu"><span><a href="#" class="active">Reseaarch Projects</a></span> <span><a href="#">Course Projects</a></span> <span><a href="#">Hobbies</a></span></p>
-						</div> -->
-					</div>
-					<div class="row">
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-15.png);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html"> Manipulator Teleoperation with Smartphone </a></h3>
-										<span> Emerging Foundation Models and Generative AI policies in robotics demand efficient trajectory collection strategies. This smartphone app is powered by Google ARCore built in VIO and utilizes Webrtc and fast UDP communication to help broadcasting expert input to the robot controller. <a href="https://github.com/Kassra-sinaei/ArTeleop">github</a>  </span>
-									</div>
-								</div>
-							</div>
-						</div>
+      <article class="card reveal">
+        <div class="card__media" style="background-image:url(images/img-12.png)"></div>
+        <div class="card__body">
+          <h3 class="card__title">Safe robust regressor-based control</h3>
+          <p class="card__text">
+            A safety layer added to a well-known class of robust regressor-based controllers, with
+            an extensive analysis of what it costs in performance.
+          </p>
+          <div class="card__links">
+            <a href="http://safe-robust-nonlinear-control.netlify.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Project page</a>
+          </div>
+        </div>
+      </article>
 
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-14.png);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Safe Flow Matching for Vision Language Action Models </a></h3>
-										<span> Combining the power of VLAs to deliver complex robotic tasks with the robustness and formal safety proofs of classic control theory unleash a new power of large behavioral models. In this research I developed a novel modifiaction of the ocnventional Flow Matching to enforce safety for SmolVLA and Pi-0. Check this <a href="https://safe-vla-fmcbf.netlify.app">blog</a> for more info. </span>
-									</div>
-								</div>
-							</div>
-						</div>
+      <article class="card reveal">
+        <div class="card__media" style="background-image:url(images/img-7.png)"></div>
+        <div class="card__body">
+          <h3 class="card__title">Autonomous racing: MPC vs. adaptive control</h3>
+          <p class="card__text">
+            Modelling and simulating a race car on a 2D track, comparing model predictive control
+            against adaptive control on the same race line. Course project for ME597 and EE582.
+          </p>
+          <div class="card__links">
+            <a href="https://github.com/Kassra-sinaei/Racing_Car" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repository</a>
+          </div>
+        </div>
+      </article>
 
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-13.png);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Safe Parameter Learning for Adaptive Controllers</a></h3>
-										<span> Main objective of my PhD research is to integrate safety guarantees via classical control theories into the state of the art learning policies and controllers. In this project I addressed one of the biggest challenges of deplying adaptive controllers. Before the controller paramter converges to the nominal values it is very difficualt to maintain safety of the system. So I developed a Robust Adaptive controller that manipulates weight update to achieve safety during the learning phase. For more details visit this <a href="https://safe-adaptive-control.netlify.app/">link</a>.</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-11.png);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Door Opening with Mobile manipulators</a></h3>
-										<span> During my internship at <a href="https://alpha-z.ai">AlphaZ Robotics</a>, I worked on a project involving mobile manipulators and door opening tasks. The goal was to develop a robust planning and control strategy that allows the robot to traverse various doors in different environments. We developed an MPPI planner to tackle this problem, for more details visit this <a href="http://optimal-door-planning.netlify.app/">link</a>.</span>
-										<!-- <p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p> -->
-									</div>
-								</div>
-							</div>
-						</div>
+      <article class="card reveal">
+        <div class="card__media" style="background-image:url(images/img-3.jpg)"></div>
+        <div class="card__body">
+          <h3 class="card__title">Surena humanoid robot</h3>
+          <p class="card__text">
+            Gait pattern generation for a full-size humanoid using the Divergent Component of
+            Motion, plus impedance control to keep the robot stable over rough terrain.
+          </p>
+          <div class="card__links">
+            <a href="https://surenahumanoid.com/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Project site</a>
+          </div>
+        </div>
+      </article>
 
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-10.png);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Safety-critical Control</a></h3>
-										<span>In this research I am studying Control Barrier Functions (CBF) and their applicatins in Robotics. I am trying to extend the CBF capabilities to better handle extreme scenarios that include leaving the safe set and retrieving safety. I have also worked on model-free safety-critical control of complex kinematic/kinetic systems. Check this <a href="http://safe-position-control-robot.netlify.app/">blog</a> for more details. </span>
-										<!-- <p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p> -->
-									</div>
-								</div>
-							</div>
-						</div>
+      <article class="card reveal">
+        <div class="card__media" style="background-image:url(images/img-9.jpg)"></div>
+        <div class="card__body">
+          <h3 class="card__title">Kalman filtering and system identification</h3>
+          <p class="card__text">
+            A comparison of linear, extended and unscented Kalman filters for fusing sensor data to
+            estimate the pose of a differential-drive robot. AERSP597 course project.
+          </p>
+          <div class="card__links">
+            <a href="KF.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> Report</a>
+          </div>
+        </div>
+      </article>
 
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-							<div class="project" style="background-image: url(images/img-12.png);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Safe Robust Regressor-based Control</a></h3>
-										<span>My PhD studies focus on developing safety filter for different type of controllers. Regressor-based controllers are an effective approach for ensuring safety in control systems. In this work I added safety layer to a well-known class of robust controllers used and performed an extensive analysis over their performance. Check results of my research in this <a href="http://safe-robust-nonlinear-control.netlify.app/">website</a>.</span>
-										<!-- <p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p> -->
-									</div>
-								</div>
-							</div>
-						</div>
+      <article class="card reveal">
+        <div class="card__media" style="background-image:url(images/img-4.jpg)"></div>
+        <div class="card__body">
+          <h3 class="card__title">Wheeled biped robot</h3>
+          <p class="card__text">
+            My undergraduate thesis: the dynamics of wheeled-legged robots, an optimally designed
+            simulated platform, and a control strategy that does not depend on the robot's full
+            dynamic equations &mdash; including jumping.
+          </p>
+          <div class="card__links">
+            <a href="https://github.com/Kassra-sinaei/wheeled_biped_robot" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repository</a>
+          </div>
+        </div>
+      </article>
 
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(images/img-7.png);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Race Line Tracking and Autonomous Racing: MPC Vs. Adaptive Control</a></h3>
-										<span>I am modeling and simulating a race car on a 2D race track for the course project of ME597:MPC and EE582:Adaptive control. This is an ongoing work. See the report on this <a href="https://github.com/Kassra-sinaei/Racing_Car">repo</a>. </span>
-										<!-- <p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p> -->
-									</div>
-								</div>
-							</div>
-						</div>
+      <article class="card reveal">
+        <div class="card__media" style="background-image:url(images/img-8.png)"></div>
+        <div class="card__body">
+          <h3 class="card__title">Reinforcement learning meets classical control</h3>
+          <p class="card__text">
+            PPO and actor-critic agents that tune PID gains on the fly inside a physics engine,
+            demonstrated on an inverted pendulum on wheels.
+          </p>
+          <div class="card__links">
+            <a href="https://www.researchgate.net/profile/Kasra_Sinaei/publication/350755668_PID_Controller_Tuning_with_Deep_Reinforcement_Learning_Policy_Gradient_Methods/links/60702e49299bf1c911bab320/PID-Controller-Tuning-with-Deep-Reinforcement-Learning-Policy-Gradient-Methods.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> Paper</a>
+          </div>
+        </div>
+      </article>
 
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-							<div class="project" style="background-image: url(images/img-3.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Surena Humanoid Robot</a></h3>
-										<span>As a member of Dynamics and Control team at <a href="https://cast-tech.ir/">CAST</a> I was working on gait pattern generation for a full full-size humanoid robot (SURENA V) using Divergent Component of Motion (DCM). We also worked on improving robot's gait stability and robustness with impedance controllers to enable the robot better traverse rough terrains. <a href="https://surenahumanoid.com/">More Info</a></span>
-										<!-- <p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p> -->
-									</div>
-								</div>
-							</div>
-						</div>
+      <article class="card reveal">
+        <div class="card__media" style="background-image:url(images/img-5.jpg)"></div>
+        <div class="card__body">
+          <h3 class="card__title">Music genre classification</h3>
+          <p class="card__text">
+            Built and labelled a dataset of Persian songs, then compared SVM, KNN, MLP and k-means
+            alongside dimensionality reduction. Pattern Recognition and Machine Learning course.
+          </p>
+          <div class="card__links">
+            <a href="https://github.com/Kassra-sinaei/ML_Project/tree/master" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repository</a>
+          </div>
+        </div>
+      </article>
 
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(images/img-9.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Kalman Filterning and System Identification</a></h3>
-										<span>This project was part of AERSP597 course. I studied and campared different methods for fusing sensors data to estimate position of a differnetial drive robot. Linear KF, Extended KF and Unscented KF were studied in this project. <a href="KF.pdf">Project Report </a></span>
-										<!-- <p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p> -->
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-							<div class="project" style="background-image: url(images/img-4.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Wheeled Biped Robot</a></h3>
-										<span>This is my undergrad thesis project. I examined dynamics of wheeled legged robots, optimally designed a simulated robot and implemented a novel control startegy that does not deped on robot's full dynamic equations. I also examined robot's jumping in the simulation using the proposed controller. <a href="https://github.com/Kassra-sinaei/wheeled_biped_robot"> More Info</a></span>
-										<!-- <p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p> -->
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-5.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Pattern Recognition</a></h3>
-										<span>During the Pattern recognition and Machine Learning course we studied music genre classification using the methods we learned in the class. First we gathered an adequate data set consisting of persian songs and labeled them, then we implemented several supervised and unsupervised learning algorithms such as SVM, KNN, MLP, K-means as well as dimension reduction technics. <a href="https://github.com/Kassra-sinaei/ML_Project/tree/master">Project Repo</a></span>
-										<!-- <p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p> -->
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(images/img-8.png);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Reinforcement Learning and Classic Control</a></h3>
-										<span>In this project I used Policy Gradient Methods for PID controller self tuning in physics engine simulation. I trained a PPO agent and Actor-critic agent to automatically adjust controller gains. Results of this work are presented in a <a href="https://www.researchgate.net/profile/Kasra_Sinaei/publication/350755668_PID_Controller_Tuning_with_Deep_Reinforcement_Learning_Policy_Gradient_Methods/links/60702e49299bf1c911bab320/PID-Controller-Tuning-with-Deep-Reinforcement-Learning-Policy-Gradient-Methods.pdf">conference</a> that includes simulation of a simple inverted pendulum on wheel. </span>
-										<!-- <p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p> -->
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- <div class="row">
-						<div class="col-md-12 animate-box">
-							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
-						</div>
-					</div> -->
-				</div>
-			</section>
+    </div>
+  </div>
+</section>
 
-			<!-- <section class="colorlib-blog" data-section="blog">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Read</span>
-							<h2 class="colorlib-heading">Recent Blog</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-								<div class="desc">
-									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-									<h3><a href="blog.html">Renovating National Gallery</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-								<div class="desc">
-									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-									<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="images/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-								<div class="desc">
-									<span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-									<h3><a href="blog.html">Make website from scratch</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box">
-							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
-						</div>
-					</div>
-				</div>
-			</section> -->
+<!-- =========================== education ============================ -->
+<section class="section" id="education">
+  <div class="section__inner">
+    <div class="section__head reveal">
+      <p class="eyebrow">Education</p>
+      <h2 class="section__title">Education</h2>
+    </div>
 
-			<section class="colorlib-about" data-section="ap_blog">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="col-md-12">
-									<div class="about-desc">
-										<span class="heading-meta">Astrophotography</span>
-										<h2 class="colorlib-heading">I am a space geek!</h2>
-										<p>I have been passionate about astronomy and space since I was a child. My father bought me a small refracting telescope when I was just 9 years old. I used my Apochromatic telescope to stare at the gas giants of our solar system and the craters on the moon. My interest in amateur astronomy stems from this childhood experience. As I am learning imaging and editing technics I share some of my astrophotography results in this <a href="Astrofolio/index.html">page</a>.</p>
-										<p> </p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+    <div class="edu">
+      <div class="edu__item edu__item--now reveal">
+        <div>
+          <h3 class="edu__degree">PhD, Electrical and Electronics Engineering</h3>
+          <p class="edu__school">The Pennsylvania State University &middot; Advisor: Dr. Donald E. Ebeigbe</p>
+        </div>
+        <p class="edu__meta">Expected Spring 2027<br>GPA 3.90</p>
+      </div>
 
-			<section class="colorlib-contact" data-section="contact">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Get in Touch</span>
-							<h2 class="colorlib-heading">Contact</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-5">
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="fa fa-envelope"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="#">kasra@psu.edu</a> <br><a href="#">kasra.sinaei@gmail.com</a></p>
-								</div>
-							</div>
+      <div class="edu__item reveal">
+        <div>
+          <h3 class="edu__degree">MSc, Electrical and Electronics Engineering</h3>
+          <p class="edu__school">The Pennsylvania State University &middot; Advisor: Dr. Donald E. Ebeigbe</p>
+        </div>
+        <p class="edu__meta">May 2024<br>GPA 3.84</p>
+      </div>
 
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="fas fa-map-marker-alt"></i>
-								</div>
-								<div class="colorlib-text">
-									<p>Electrical Engineering West, 013-C4, <br>State College, PA16802</p>
-								</div>
-							</div>
+      <div class="edu__item reveal">
+        <div>
+          <h3 class="edu__degree">BSc, Mechanical Engineering</h3>
+          <p class="edu__school">University of Tehran &middot; Advisor: Dr. Ehsan Hosseinian</p>
+        </div>
+        <p class="edu__meta">February 2022<br>GPA 17 / 20</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="fas fa-phone"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="tel://">+123 456 7890</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-7 col-md-push-1">
-							<div class="row">
-								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-									<form action="">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Subject">
-										</div>
-										<div class="form-group">
-											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-										</div>
-										<div class="form-group">
-											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
-										</div>
-									</form>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+<!-- ======================== astrophotography ======================== -->
+<section class="section astro" id="astro">
+  <div class="section__inner">
+    <div class="section__head reveal">
+      <p class="eyebrow eyebrow--dark">Astrophotography</p>
+      <h2 class="section__title">Long exposures, far away</h2>
+      <p class="section__lede">
+        My father gave me a small refractor when I was nine, and I have been pointing telescopes at
+        things ever since. These are shot and stacked from my own apochromatic rig. More of them
+        live in the <a href="Astrofolio/index.html">full gallery</a>.
+      </p>
+    </div>
 
-		</div><!-- end:colorlib-main -->
-	</div><!-- end:container-wrap -->
-	</div><!-- end:colorlib-page -->
+    <div class="gallery reveal">
+      <figure class="shot shot--w2" data-full="images/astro/moon-phases.jpg" data-caption="The Moon — synodic phase sequence">
+        <img src="images/astro/moon-phases-thumb.jpg" alt="A sequence of the Moon through its phases, arranged in an arc" loading="lazy">
+        <figcaption>The Moon<span>Synodic phase sequence</span></figcaption>
+      </figure>
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
-	
-	
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
+      <figure class="shot shot--h2" data-full="images/astro/m42-orion.jpg" data-caption="M42 &amp; NGC 1977 — Orion and Running Man nebulae">
+        <img src="images/astro/m42-orion-thumb.jpg" alt="The Orion Nebula in pink and blue, with the Running Man Nebula above it" loading="lazy">
+        <figcaption>M42 &middot; NGC 1977<span>Orion &amp; Running Man</span></figcaption>
+      </figure>
 
-	</body>
+      <figure class="shot" data-full="images/astro/m81-m82.jpg" data-caption="M81 &amp; M82 — Bode's and Cigar galaxies, Ursa Major">
+        <img src="images/astro/m81-m82-thumb.jpg" alt="Two galaxies: a face-on spiral and an edge-on starburst galaxy" loading="lazy">
+        <figcaption>M81 &middot; M82<span>Bode's &amp; Cigar galaxies</span></figcaption>
+      </figure>
+
+      <figure class="shot shot--w2" data-full="images/astro/m31-andromeda.jpg" data-caption="M31 — Andromeda Galaxy, with M32 and M110">
+        <img src="images/astro/m31-andromeda-thumb.jpg" alt="The Andromeda Galaxy with its dust lanes and two satellite galaxies" loading="lazy">
+        <figcaption>M31<span>Andromeda, with M32 &amp; M110</span></figcaption>
+      </figure>
+
+      <figure class="shot" data-full="images/astro/m8-m20-lagoon-trifid.jpg" data-caption="M8 &amp; M20 — Lagoon and Trifid nebulae, Sagittarius">
+        <img src="images/astro/m8-m20-lagoon-trifid-thumb.jpg" alt="The Lagoon Nebula and the smaller Trifid Nebula in a dense star field" loading="lazy">
+        <figcaption>M8 &middot; M20<span>Lagoon &amp; Trifid</span></figcaption>
+      </figure>
+
+      <figure class="shot shot--w2" data-full="images/astro/ngc6992-veil.jpg" data-caption="NGC 6992 — Eastern Veil Nebula, Cygnus">
+        <img src="images/astro/ngc6992-veil-thumb.jpg" alt="The filamentary red and blue arc of the Eastern Veil Nebula" loading="lazy">
+        <figcaption>NGC 6992<span>Eastern Veil</span></figcaption>
+      </figure>
+
+      <figure class="shot shot--w2" data-full="images/astro/m27-dumbbell.jpg" data-caption="M27 — Dumbbell Nebula, Vulpecula">
+        <img src="images/astro/m27-dumbbell-thumb.jpg" alt="The small teal Dumbbell Nebula amid a wide star field" loading="lazy">
+        <figcaption>M27<span>Dumbbell Nebula</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= contact ============================ -->
+<section class="section contact" id="contact">
+  <div class="section__inner">
+    <div class="section__head reveal">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section__title">Get in touch</h2>
+      <p class="section__lede">
+        I am always glad to talk about safety-critical control, physical AI, or a robot that is
+        misbehaving. Email is the fastest way to reach me.
+      </p>
+    </div>
+
+    <div class="contact__grid">
+      <div class="contact__card reveal">
+        <i class="fa-regular fa-envelope"></i>
+        <h3>Email</h3>
+        <p>
+          <a href="mailto:kasra@psu.edu">kasra@psu.edu</a><br>
+          <a href="mailto:kasra.sinaei@gmail.com">kasra.sinaei@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="contact__card reveal">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Office</h3>
+        <p>Electrical Engineering West, 013-C4<br>Penn State, State College, PA 16802</p>
+      </div>
+
+      <div class="contact__card reveal">
+        <i class="fa-solid fa-link"></i>
+        <h3>Elsewhere</h3>
+        <p>
+          <a href="https://github.com/Kassra-sinaei" target="_blank" rel="noopener">GitHub</a> &middot;
+          <a href="https://www.linkedin.com/in/kasra-s-496843a2/" target="_blank" rel="noopener">LinkedIn</a> &middot;
+          <a href="https://www.instagram.com/apsc_astro/" target="_blank" rel="noopener">Astro</a>
+        </p>
+      </div>
+    </div>
+
+    <p class="colophon">
+      <span>&copy; <span class="year">2026</span> Kasra Sinaei</span>
+      <span>Set in Archivo, Source Serif 4 and IBM Plex Mono</span>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photograph">
+  <button class="lightbox__close" aria-label="Close">&times;</button>
+  <div>
+    <img src="" alt="">
+    <p class="lightbox__cap"></p>
+  </div>
+</div>
+
+<script src="js/site.js"></script>
+</body>
 </html>
-
