@@ -19,11 +19,22 @@
   --flux-dk: #1F63D6;
   --barrier: #E8A33D;
 
-  --line:      rgba(16, 21, 32, 0.10);
+  --line:      rgba(16, 21, 32, 0.13);
   --line-soft: rgba(16, 21, 32, 0.06);
   --line-dark: rgba(255, 255, 255, 0.10);
 
   --rail: 300px;
+
+  /* Section grounds — one cool family, gently modulated, so consecutive
+     sections always read as different without any of them shouting. The
+     deeper steps are given to the sections that carry white cards, so the
+     cards keep their edge. */
+  --sec-about:      #F1F5FA;
+  --sec-research:   #FCFDFE;
+  --sec-experience: #F5F8FC;
+  --sec-projects:   #EDF2F8;
+  --sec-education:  #F6F9FD;
+  --sec-contact:    #EEF3F9;
 
   --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
   --body:    "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -112,8 +123,16 @@ h1, h2, h3, h4 {
 
 .section {
   padding: clamp(72px, 9vw, 128px) clamp(24px, 5vw, 72px);
-  border-bottom: 1px solid var(--line-soft);
+  background: var(--sec, var(--paper));
 }
+
+#about      { --sec: var(--sec-about); }
+#research   { --sec: var(--sec-research); }
+#experience { --sec: var(--sec-experience); }
+#projects   { --sec: var(--sec-projects); }
+#education  { --sec: var(--sec-education); }
+#astro      { --sec: var(--void); }
+#contact    { --sec: var(--sec-contact); }
 .section__inner { max-width: 1080px; margin: 0 auto; }
 .section__head { max-width: 720px; margin-bottom: clamp(38px, 5vw, 60px); }
 .section__title {
@@ -385,7 +404,6 @@ a.tag i { font-size: 0.72em; }
   color: #fff;
   overflow: hidden;
   padding: 110px clamp(24px, 5vw, 72px);
-  border-bottom: 0;
 }
 
 .hero__photo {
@@ -641,7 +659,7 @@ a.tag i { font-size: 0.72em; }
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background: var(--paper);
+  background: var(--sec, var(--paper));
   border: 2px solid var(--flux);
 }
 .tl--now::before { border-color: var(--barrier); background: var(--barrier); }
@@ -759,9 +777,7 @@ a.tag i { font-size: 0.72em; }
 /* ---------- astrophotography (dark) ---------- */
 
 .astro {
-  background: var(--void);
   color: #E8ECF4;
-  border-bottom: 0;
 }
 .astro .section__title { color: #fff; }
 .astro .section__lede { color: #A8B2C4; }
@@ -829,7 +845,6 @@ a.tag i { font-size: 0.72em; }
 
 /* ---------- contact ---------- */
 
-.contact { border-bottom: 0; }
 .contact__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
