@@ -638,31 +638,57 @@ a.tag i { font-size: 0.72em; }
 
 /* ---------- timeline (experience) ---------- */
 
-.timeline { position: relative; padding-left: 30px; }
+.timeline { position: relative; padding-left: 64px; }
 .timeline::before {
   content: "";
   position: absolute;
-  left: 5px;
-  top: 8px;
-  bottom: 8px;
+  left: 21px;
+  top: 10px;
+  bottom: 10px;
   width: 1px;
   background: var(--line);
 }
 
 .tl { position: relative; padding: 0 0 34px; }
 .tl:last-child { padding-bottom: 0; }
-.tl::before {
-  content: "";
+
+/* the organisation's mark stands where the timeline dot used to */
+.tl__logo {
   position: absolute;
-  left: -30px;
-  top: 8px;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background: var(--sec, var(--paper));
-  border: 2px solid var(--flux);
+  left: -64px;
+  top: -1px;
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  box-shadow: 0 2px 6px rgba(16, 21, 32, 0.05);
+  overflow: hidden;
+  transition: border-color 0.28s var(--ease), box-shadow 0.28s var(--ease),
+              transform 0.28s var(--ease);
 }
-.tl--now::before { border-color: var(--barrier); background: var(--barrier); }
+.tl__logo img { width: 27px; height: 27px; object-fit: contain; }
+.tl:hover .tl__logo {
+  transform: translateY(-2px);
+  border-color: rgba(61, 139, 253, 0.45);
+  box-shadow: 0 8px 18px rgba(16, 21, 32, 0.10);
+}
+
+/* no public mark for this one — set the initials instead */
+.tl__logo--text {
+  font-family: var(--display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--muted);
+}
+
+.tl--now .tl__logo {
+  border-color: rgba(232, 163, 61, 0.75);
+  box-shadow: 0 0 0 3px rgba(232, 163, 61, 0.14), 0 2px 6px rgba(16, 21, 32, 0.05);
+}
 
 .tl__head {
   display: flex;
@@ -924,6 +950,10 @@ a.tag i { font-size: 0.72em; }
 
 @media (max-width: 720px) {
   body { font-size: 16px; }
+  .timeline { padding-left: 52px; }
+  .timeline::before { left: 17px; }
+  .tl__logo { left: -52px; width: 35px; height: 35px; border-radius: 8px; }
+  .tl__logo img { width: 22px; height: 22px; }
   .gallery { grid-template-columns: repeat(2, 1fr); }
   .shot--h2 { grid-row: span 1; }
   .pub { grid-template-columns: 1fr; gap: 6px; }

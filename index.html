@@ -165,24 +165,27 @@
       <div class="about__prose reveal">
         <p>
           I am a PhD candidate in Electrical Engineering at the Pennsylvania State University,
-          working on <strong>control</strong> and <strong>machine learning</strong> for robotic
-          systems. My research is in <strong>safety-critical</strong> and <strong>adaptive
-          control</strong>: designing controllers that keep a system inside its operating limits
-          when the model is uncertain, only partially known, or changing &mdash; and extending
-          those guarantees to learned policies. My earlier work was on legged locomotion and
-          humanoid gait control.
+          working on <strong>learned policies</strong> and <strong>control</strong> for robotic
+          systems. Most of my current work is on <strong>generative AI for robotics</strong>
+          &mdash; <strong>vision-language-action models</strong>, diffusion and flow-matching
+          policies, and <strong>reinforcement learning</strong> &mdash; and on making those
+          policies dependable enough to run on hardware, which is where
+          <strong>safety-critical</strong> and <strong>adaptive control</strong> come in.
         </p>
         <p>
-          The methods I work with span classical and learning-based control: nonlinear and optimal
+          I work across both sides of that boundary. On the learning side: policy-gradient and
+          model-free reinforcement learning, imitation from demonstration, and large behaviour
+          models conditioned on language and vision. On the control side: nonlinear and optimal
           control, adaptive and robust design, convex optimization, model predictive control,
-          reinforcement learning, state estimation and motion planning. These carry over to most
-          settings where a physical system has to behave predictably under uncertainty, and I am
-          interested in those problems broadly, not only in the robots I have used to study them.
+          state estimation and motion planning. These carry over to most settings where a physical
+          system has to act under uncertainty, and I am interested in those problems broadly, not
+          only in the robots I have used to study them.
         </p>
         <p>
           I build the software as well as the theory. I work daily in C++, Python, MATLAB and C#
-          with ROS, and I test on real hardware &mdash; quadrupeds, manipulators, mobile bases and
-          full-size humanoids.
+          with ROS and PyTorch, and I test on real hardware &mdash; quadrupeds, manipulators,
+          mobile bases and full-size humanoids. My earlier research was on legged locomotion and
+          humanoid gait control.
         </p>
       </div>
 
@@ -206,9 +209,24 @@
 
     <div class="focus">
       <div class="focus__item reveal">
+        <i class="fa-solid fa-robot"></i>
+        <h3>Physical AI</h3>
+        <p>Generative policies driving real hardware: vision-language-action models, diffusion and flow-matching policies, imitation from demonstration.</p>
+      </div>
+      <div class="focus__item reveal">
+        <i class="fa-solid fa-arrows-spin"></i>
+        <h3>Reinforcement learning</h3>
+        <p>Policy-gradient and model-free methods for control, tuning and sequential decision-making.</p>
+      </div>
+      <div class="focus__item reveal">
+        <i class="fa-solid fa-diagram-project"></i>
+        <h3>Agentic AI</h3>
+        <p>Task planning and decision-making over structured world representations, executed on real systems.</p>
+      </div>
+      <div class="focus__item reveal">
         <i class="fa-solid fa-shield-halved"></i>
         <h3>Safety-critical control</h3>
-        <p>Enforcing hard constraints on physical systems: barrier functions, set invariance, and safety filters around an existing controller.</p>
+        <p>Enforcing hard constraints on physical systems: barrier functions, set invariance, and safety filters around a learned or classical controller.</p>
       </div>
       <div class="focus__item reveal">
         <i class="fa-solid fa-sliders"></i>
@@ -221,11 +239,6 @@
         <p>Lyapunov design, convex optimization and model predictive control for constrained, nonlinear plants.</p>
       </div>
       <div class="focus__item reveal">
-        <i class="fa-solid fa-arrows-spin"></i>
-        <h3>Reinforcement learning</h3>
-        <p>Policy-gradient and model-free methods for control, tuning and sequential decision-making.</p>
-      </div>
-      <div class="focus__item reveal">
         <i class="fa-solid fa-route"></i>
         <h3>Motion planning</h3>
         <p>Sampling-based and optimization-based planning &mdash; MPC and MPPI &mdash; for mobile robots and manipulators.</p>
@@ -234,16 +247,6 @@
         <i class="fa-solid fa-satellite-dish"></i>
         <h3>State estimation &amp; SLAM</h3>
         <p>Sensor fusion, Kalman filtering, and visual-inertial and LiDAR odometry for localisation and mapping.</p>
-      </div>
-      <div class="focus__item reveal">
-        <i class="fa-solid fa-robot"></i>
-        <h3>Robot learning</h3>
-        <p>Learned policies driving real hardware, including vision-language-action models and imitation from demonstration.</p>
-      </div>
-      <div class="focus__item reveal">
-        <i class="fa-solid fa-diagram-project"></i>
-        <h3>Agentic AI</h3>
-        <p>Task planning and decision-making over structured world representations, executed on real systems.</p>
       </div>
     </div>
   </div>
@@ -388,6 +391,7 @@
 
     <div class="timeline">
       <article class="tl tl--now reveal">
+        <span class="tl__logo"><img src="images/logos/chewy.png" alt="Chewy" loading="lazy"></span>
         <div class="tl__head">
           <h3 class="tl__role">AI Research Scientist Intern, <a class="tl__org" href="https://careers.chewy.com/us/en/home" target="_blank" rel="noopener">Chewy</a></h3>
           <span class="tl__when">2026</span>
@@ -400,6 +404,7 @@
       </article>
 
       <article class="tl reveal">
+        <span class="tl__logo"><img src="images/logos/alphaz.png" alt="AlphaZ" loading="lazy"></span>
         <div class="tl__head">
           <h3 class="tl__role">Robotic Software Engineer Intern, <a class="tl__org" href="https://alpha-z.ai" target="_blank" rel="noopener">AlphaZ</a></h3>
           <span class="tl__when">2025</span>
@@ -412,8 +417,9 @@
       </article>
 
       <article class="tl reveal">
+        <span class="tl__logo"><img src="images/logos/psu.png" alt="Penn State" loading="lazy"></span>
         <div class="tl__head">
-          <h3 class="tl__role">Graduate Researcher, <span class="tl__org">CARL &mdash; Penn State</span></h3>
+          <h3 class="tl__role">Graduate Researcher, <a class="tl__org" href="https://sites.psu.edu/carl/" target="_blank" rel="noopener">CARL &mdash; Penn State</a></h3>
           <span class="tl__when">2022 &ndash; present</span>
         </div>
         <p class="tl__body">
@@ -424,6 +430,7 @@
       </article>
 
       <article class="tl reveal">
+        <span class="tl__logo"><img src="images/logos/cast.png" alt="CAST" loading="lazy"></span>
         <div class="tl__head">
           <h3 class="tl__role">Undergraduate Research Assistant, <a class="tl__org" href="https://cast-tech.ir/" target="_blank" rel="noopener">CAST</a></h3>
           <span class="tl__when">2019 &ndash; 2022</span>
@@ -437,6 +444,7 @@
       </article>
 
       <article class="tl reveal">
+        <span class="tl__logo tl__logo--text">MW</span>
         <div class="tl__head">
           <h3 class="tl__role">Summer Intern, <span class="tl__org">MEWE</span></h3>
           <span class="tl__when">2018, 2019</span>
