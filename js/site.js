@@ -10,13 +10,13 @@
      Signature: a control barrier function safety filter, running live.
 
      Blue trajectories follow a nominal drift to the right. An amber contour
-     marks h(x) = 0. Whenever a trajectory would cross it, the min-norm
-     CBF-QP correction
+     marks the boundary of the admissible set. Whenever a trajectory would
+     cross it, the min-norm correction
 
          u = u_nom + max(0, -(h_dot + alpha*h)) * n
 
      pushes it back along the outward normal, so it glides along the
-     boundary instead of entering. Same filter as the papers.
+     boundary instead of entering.
      --------------------------------------------------------------------- */
   function safeSetField(canvas) {
     var ctx = canvas.getContext("2d");

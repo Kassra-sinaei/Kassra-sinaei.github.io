@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kasra Sinaei — Safety-Critical Control &amp; Robot Learning</title>
+<title>Kasra Sinaei — Control, Robotics &amp; Machine Learning</title>
 
-<meta name="description" content="Kasra Sinaei is a PhD candidate in Electrical Engineering at Penn State working on safety-critical control, control barrier functions, and vision-language-action models for robotics.">
+<meta name="description" content="Kasra Sinaei is a PhD candidate in Electrical Engineering at Penn State working on control and machine learning for robotic systems: safety-critical and adaptive control, reinforcement learning, motion planning and state estimation.">
 <meta name="author" content="Kasra Sinaei">
-<meta name="keywords" content="Kasra Sinaei, control barrier functions, safety-critical control, robotics, physical AI, vision language action, adaptive control, legged locomotion, Penn State">
+<meta name="keywords" content="Kasra Sinaei, control engineer, robotics, machine learning, safety-critical control, adaptive control, robust control, nonlinear control, model predictive control, reinforcement learning, motion planning, state estimation, SLAM, control barrier functions, legged locomotion, Penn State">
 
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Kasra Sinaei — Safety-Critical Control &amp; Robot Learning">
-<meta property="og:description" content="PhD candidate building provable safety into modern robot learning: barrier functions, adaptive control, and vision-language-action models.">
+<meta property="og:title" content="Kasra Sinaei — Control, Robotics &amp; Machine Learning">
+<meta property="og:description" content="PhD candidate in Electrical Engineering at Penn State, working on control and machine learning for robotic systems.">
 <meta property="og:url" content="https://kassra-sinaei.github.io/">
 <meta property="og:image" content="https://kassra-sinaei.github.io/images/hero-lab.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Kasra Sinaei — Safety-Critical Control &amp; Robot Learning">
-<meta name="twitter:description" content="PhD candidate building provable safety into modern robot learning.">
+<meta name="twitter:title" content="Kasra Sinaei — Control, Robotics &amp; Machine Learning">
+<meta name="twitter:description" content="PhD candidate in Electrical Engineering at Penn State, working on control and machine learning for robotic systems.">
 <meta name="twitter:image" content="https://kassra-sinaei.github.io/images/hero-lab.jpg">
 
 <link rel="canonical" href="https://kassra-sinaei.github.io/">
@@ -46,12 +46,20 @@
     "name": "The Pennsylvania State University"
   },
   "knowsAbout": [
-    "Control Barrier Functions",
+    "Control Theory",
     "Safety-Critical Control",
     "Adaptive Control",
+    "Robust Control",
+    "Nonlinear Control",
+    "Optimal Control",
+    "Model Predictive Control",
+    "Control Barrier Functions",
+    "Reinforcement Learning",
+    "Motion Planning",
+    "State Estimation",
+    "SLAM",
     "Robotics",
-    "Physical AI",
-    "Vision-Language-Action Models",
+    "Machine Learning",
     "Legged Locomotion"
   ],
   "sameAs": [
@@ -116,13 +124,15 @@
 
   <div class="hero__inner">
     <div class="hero__text">
-      <p class="eyebrow eyebrow--dark">Control &middot; Robotics &middot; Physical AI</p>
-      <h2 class="hero__title"><em>Provable safety</em><br>for robots that learn.</h2>
+      <p class="eyebrow eyebrow--dark">Control &middot; Robotics &middot; Machine Learning</p>
+      <h2 class="hero__title">Kasra Sinaei</h2>
       <p class="hero__lede">
-        I'm Kasra Sinaei, a PhD candidate in Electrical Engineering at Penn State working where
-        control theory meets modern robot learning. I build <strong>control barrier functions</strong>
-        into adaptive controllers and <strong>vision-language-action models</strong>, so a robot can
-        keep learning without ever leaving its safe set.
+        PhD candidate in Electrical Engineering at Penn State, working on
+        <strong>control</strong> and <strong>machine learning</strong> for robotic systems. My
+        research is in safety-critical and adaptive control &mdash; keeping a system inside its
+        operating limits when the dynamics are uncertain &mdash; and in carrying those guarantees
+        over to learned policies. I build the software as well as the theory, and test it on
+        hardware.
       </p>
       <div class="hero__actions">
         <a class="btn btn--primary" href="#research">Read the research <i class="fa-solid fa-arrow-right"></i></a>
@@ -138,8 +148,8 @@
 
   <p class="hero__legend">
     <i class="k-flux"></i>closed-loop trajectory<br>
-    <i class="k-barrier"></i>barrier <em>h(x) = 0</em><br>
-    live CBF-QP safety filter
+    <i class="k-barrier"></i>constraint boundary<br>
+    live safety filter
   </p>
 </section>
 
@@ -148,30 +158,31 @@
   <div class="section__inner">
     <div class="section__head reveal">
       <p class="eyebrow">About</p>
-      <h2 class="section__title">Control theory, held to a robot's standards</h2>
+      <h2 class="section__title">Background</h2>
     </div>
 
     <div class="about__grid">
       <div class="about__prose reveal">
         <p>
-          I am pursuing graduate studies in <strong>control</strong>, <strong>robotics</strong> and
-          <strong>physical AI</strong> at the Pennsylvania State University, where I research
-          <strong>safety-critical control</strong> via barrier functions. My work develops methods
-          that fuse formal safety guarantees with model-free learning algorithms and the emerging
-          class of vision-language-action models &mdash; the goal being a robot whose behaviour you
-          can bound before you deploy it, not after. My undergraduate research was on legged
-          locomotion and humanoid gait control.
+          I am a PhD candidate in Electrical Engineering at the Pennsylvania State University,
+          working on <strong>control</strong> and <strong>machine learning</strong> for robotic
+          systems. My research is in <strong>safety-critical</strong> and <strong>adaptive
+          control</strong>: designing controllers that keep a system inside its operating limits
+          when the model is uncertain, only partially known, or changing &mdash; and extending
+          those guarantees to learned policies. My earlier work was on legged locomotion and
+          humanoid gait control.
         </p>
         <p>
-          Along the way I have studied and published on control theory, optimization, nonlinear
-          systems and robotics. I build the software too: I work daily in C++, Python, MATLAB and
-          C#, on real hardware &mdash; Unitree Go1 quadrupeds, Quanser QArm manipulators, SO-101
-          arms, and full-size humanoids.
+          The methods I work with span classical and learning-based control: nonlinear and optimal
+          control, adaptive and robust design, convex optimization, model predictive control,
+          reinforcement learning, state estimation and motion planning. These carry over to most
+          settings where a physical system has to behave predictably under uncertainty, and I am
+          interested in those problems broadly, not only in the robots I have used to study them.
         </p>
         <p>
-          Outside the lab I photograph deep-sky objects. It is the same problem, really: a long
-          integration, a lot of noise, and a signal that only appears if you are disciplined about
-          the error.
+          I build the software as well as the theory. I work daily in C++, Python, MATLAB and C#
+          with ROS, and I test on real hardware &mdash; quadrupeds, manipulators, mobile bases and
+          full-size humanoids.
         </p>
       </div>
 
@@ -197,42 +208,42 @@
       <div class="focus__item reveal">
         <i class="fa-solid fa-shield-halved"></i>
         <h3>Safety-critical control</h3>
-        <p>Control barrier functions, forward invariance, and recovery once the safe set is left.</p>
+        <p>Enforcing hard constraints on physical systems: barrier functions, set invariance, and safety filters around an existing controller.</p>
       </div>
       <div class="focus__item reveal">
         <i class="fa-solid fa-sliders"></i>
         <h3>Adaptive &amp; robust control</h3>
-        <p>Guarantees that hold while the parameters are still converging, not only after.</p>
+        <p>Holding performance when the model is uncertain, changing, or wrong &mdash; parameter estimation, robust synthesis, stability guarantees.</p>
       </div>
       <div class="focus__item reveal">
-        <i class="fa-solid fa-robot"></i>
-        <h3>Physical AI</h3>
-        <p>VLA policies, flow matching, and 3D scene graphs driving real manipulators.</p>
-      </div>
-      <div class="focus__item reveal">
-        <i class="fa-solid fa-shoe-prints"></i>
-        <h3>Legged locomotion</h3>
-        <p>DCM gait generation and impedance control on full-size humanoid robots.</p>
-      </div>
-      <div class="focus__item reveal">
-        <i class="fa-solid fa-diagram-project"></i>
-        <h3>Agentic AI</h3>
-        <p>Long-horizon task decomposition over 3D scene graphs, executed on real manipulators.</p>
+        <i class="fa-solid fa-gauge-high"></i>
+        <h3>Nonlinear &amp; optimal control</h3>
+        <p>Lyapunov design, convex optimization and model predictive control for constrained, nonlinear plants.</p>
       </div>
       <div class="focus__item reveal">
         <i class="fa-solid fa-arrows-spin"></i>
         <h3>Reinforcement learning</h3>
-        <p>Policy-gradient and model-free methods, from PID self-tuning to learned controllers.</p>
+        <p>Policy-gradient and model-free methods for control, tuning and sequential decision-making.</p>
       </div>
       <div class="focus__item reveal">
         <i class="fa-solid fa-route"></i>
         <h3>Motion planning</h3>
-        <p>MPPI and model predictive control for mobile manipulators in cluttered space.</p>
+        <p>Sampling-based and optimization-based planning &mdash; MPC and MPPI &mdash; for mobile robots and manipulators.</p>
       </div>
       <div class="focus__item reveal">
         <i class="fa-solid fa-satellite-dish"></i>
-        <h3>SLAM &amp; estimation</h3>
-        <p>LiDAR and visual-inertial odometry, Kalman filtering, and sensor fusion.</p>
+        <h3>State estimation &amp; SLAM</h3>
+        <p>Sensor fusion, Kalman filtering, and visual-inertial and LiDAR odometry for localisation and mapping.</p>
+      </div>
+      <div class="focus__item reveal">
+        <i class="fa-solid fa-robot"></i>
+        <h3>Robot learning</h3>
+        <p>Learned policies driving real hardware, including vision-language-action models and imitation from demonstration.</p>
+      </div>
+      <div class="focus__item reveal">
+        <i class="fa-solid fa-diagram-project"></i>
+        <h3>Agentic AI</h3>
+        <p>Task planning and decision-making over structured world representations, executed on real systems.</p>
       </div>
     </div>
   </div>
@@ -245,8 +256,8 @@
       <p class="eyebrow">Research</p>
       <h2 class="section__title">Publications</h2>
       <p class="section__lede">
-        Peer-reviewed work on safety-critical control and robot learning. Several papers have
-        accompanying project pages with video, derivations and hardware results.
+        Peer-reviewed work in control theory, robotics and machine learning. Several papers have
+        an accompanying project page with video, derivations and hardware results.
       </p>
     </div>
 
@@ -372,7 +383,7 @@
   <div class="section__inner">
     <div class="section__head reveal">
       <p class="eyebrow">Experience</p>
-      <h2 class="section__title">Where the work happened</h2>
+      <h2 class="section__title">Positions</h2>
     </div>
 
     <div class="timeline">
@@ -444,7 +455,7 @@
   <div class="section__inner">
     <div class="section__head reveal">
       <p class="eyebrow">Projects</p>
-      <h2 class="section__title">Things I built</h2>
+      <h2 class="section__title">Selected work</h2>
       <p class="section__lede">
         Research prototypes, course work and open source. Most link to a write-up or a repository.
       </p>
@@ -457,9 +468,9 @@
         <div class="card__body">
           <h3 class="card__title">Manipulator teleoperation from a smartphone</h3>
           <p class="card__text">
-            Foundation-model policies need a lot of demonstrations. This app turns a phone into a
-            6-DoF teleoperation device using ARCore's built-in VIO, streaming expert input to the
-            robot controller over WebRTC and low-latency UDP.
+            A phone used as a 6-DoF teleoperation device, using ARCore's visual-inertial odometry
+            and streaming operator input to the robot controller over WebRTC and low-latency UDP.
+            Built to make demonstration collection cheap.
           </p>
           <div class="card__links">
             <a href="https://github.com/Kassra-sinaei/ArTeleop" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repository</a>
@@ -472,9 +483,9 @@
         <div class="card__body">
           <h3 class="card__title">Safe flow matching for vision-language-action models</h3>
           <p class="card__text">
-            Rather than filtering a VLA's output after the fact, this work embeds a barrier
-            constraint directly into the denoising process, giving SmolVLA and &pi;-0 formal safety
-            without retraining or safety-labelled data.
+            A constraint embedded directly in the generative denoising process rather than applied
+            to its output, giving SmolVLA and &pi;-0 formal safety guarantees without retraining or
+            safety-labelled data.
           </p>
           <div class="card__links">
             <a href="https://safe-vla-fmcbf.netlify.app" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Project page</a>
@@ -487,9 +498,8 @@
         <div class="card__body">
           <h3 class="card__title">Safe parameter learning for adaptive controllers</h3>
           <p class="card__text">
-            Adaptive controllers are hardest to trust before their parameters converge. This robust
-            adaptive controller shapes the weight update itself so safety holds throughout the
-            learning transient, not just at the limit.
+            A robust adaptive controller that shapes the parameter update so constraints hold
+            throughout the learning transient, not only after the estimates converge.
           </p>
           <div class="card__links">
             <a href="https://safe-adaptive-control.netlify.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Project page</a>
@@ -502,9 +512,9 @@
         <div class="card__body">
           <h3 class="card__title">Door opening with mobile manipulators</h3>
           <p class="card__text">
-            Built at AlphaZ Robotics: an MPPI planner that lets a mobile manipulator traverse
-            varied doors across different environments, coupling base motion and arm contact in one
-            optimisation.
+            An MPPI planner that lets a mobile manipulator traverse varied doors across different
+            environments, coupling base motion and arm contact in a single optimisation. Built at
+            AlphaZ Robotics.
           </p>
           <div class="card__links">
             <a href="http://optimal-door-planning.netlify.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Project page</a>
@@ -517,8 +527,8 @@
         <div class="card__body">
           <h3 class="card__title">Safety-critical control with barrier functions</h3>
           <p class="card__text">
-            Extending control barrier functions to the awkward cases: what happens when the system
-            has already left the safe set, and how it recovers. Includes model-free safety-critical
+            Control barrier functions applied to cases outside the standard assumptions, including
+            recovery once the system has already left the safe set, and model-free safety-critical
             control of complex kinematic and kinetic systems.
           </p>
           <div class="card__links">
@@ -532,8 +542,8 @@
         <div class="card__body">
           <h3 class="card__title">Safe robust regressor-based control</h3>
           <p class="card__text">
-            A safety layer added to a well-known class of robust regressor-based controllers, with
-            an extensive analysis of what it costs in performance.
+            A safety layer added to a standard class of robust regressor-based controllers, with an
+            analysis of its effect on tracking performance.
           </p>
           <div class="card__links">
             <a href="http://safe-robust-nonlinear-control.netlify.app/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Project page</a>
@@ -547,7 +557,7 @@
           <h3 class="card__title">Autonomous racing: MPC vs. adaptive control</h3>
           <p class="card__text">
             Modelling and simulating a race car on a 2D track, comparing model predictive control
-            against adaptive control on the same race line. Course project for ME597 and EE582.
+            with adaptive control on the same race line. Course project for ME597 and EE582.
           </p>
           <div class="card__links">
             <a href="https://github.com/Kassra-sinaei/Racing_Car" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repository</a>
@@ -561,7 +571,7 @@
           <h3 class="card__title">Surena humanoid robot</h3>
           <p class="card__text">
             Gait pattern generation for a full-size humanoid using the Divergent Component of
-            Motion, plus impedance control to keep the robot stable over rough terrain.
+            Motion, with impedance control for stability over rough terrain.
           </p>
           <div class="card__links">
             <a href="https://surenahumanoid.com/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Project site</a>
@@ -588,9 +598,9 @@
         <div class="card__body">
           <h3 class="card__title">Wheeled biped robot</h3>
           <p class="card__text">
-            My undergraduate thesis: the dynamics of wheeled-legged robots, an optimally designed
-            simulated platform, and a control strategy that does not depend on the robot's full
-            dynamic equations &mdash; including jumping.
+            Undergraduate thesis: dynamics of wheeled-legged robots, an optimally designed simulated
+            platform, and a control strategy that does not require the full dynamic model, including
+            jumping.
           </p>
           <div class="card__links">
             <a href="https://github.com/Kassra-sinaei/wheeled_biped_robot" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repository</a>
@@ -603,7 +613,7 @@
         <div class="card__body">
           <h3 class="card__title">Reinforcement learning meets classical control</h3>
           <p class="card__text">
-            PPO and actor-critic agents that tune PID gains on the fly inside a physics engine,
+            PPO and actor-critic agents tuning PID gains online inside a physics engine,
             demonstrated on an inverted pendulum on wheels.
           </p>
           <div class="card__links">
@@ -635,7 +645,7 @@
   <div class="section__inner">
     <div class="section__head reveal">
       <p class="eyebrow">Education</p>
-      <h2 class="section__title">Education</h2>
+      <h2 class="section__title">Degrees</h2>
     </div>
 
     <div class="edu">
@@ -670,12 +680,12 @@
 <section class="section astro" id="astro">
   <div class="section__inner">
     <div class="section__head reveal">
-      <p class="eyebrow eyebrow--dark">Astrophotography</p>
-      <h2 class="section__title">Long exposures, far away</h2>
+      <p class="eyebrow eyebrow--dark">Personal</p>
+      <h2 class="section__title">Astrophotography</h2>
       <p class="section__lede">
-        My father gave me a small refractor when I was nine, and I have been pointing telescopes at
-        things ever since. These are shot and stacked from my own apochromatic rig. More of them
-        live in the <a href="Astrofolio/index.html">full gallery</a>.
+        I have photographed the night sky since I was a child. These are stacked from my own
+        setup; the full archive, with capture details, is in the
+        <a href="Astrofolio/index.html">Astrofolio</a>.
       </p>
     </div>
 
@@ -718,8 +728,8 @@
       <p class="eyebrow">Contact</p>
       <h2 class="section__title">Get in touch</h2>
       <p class="section__lede">
-        I am always glad to talk about safety-critical control, physical AI, or a robot that is
-        misbehaving. Email is the fastest way to reach me.
+        I am open to research and engineering roles in control, robotics and machine learning,
+        and happy to talk about the work. Email is the fastest way to reach me.
       </p>
     </div>
 
