@@ -1008,6 +1008,9 @@ a.tag i { font-size: 0.72em; }
   max-width: 190px;
   margin: 0 auto;
 }
+/* the label may carry a link; it should read as a label first */
+.figure__l a { color: inherit; }
+.figure__l a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
 
 @media (max-width: 900px) {
   /* fixed attachment misbehaves on touch browsers */
