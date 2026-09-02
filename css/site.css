@@ -949,6 +949,73 @@ a.tag i { font-size: 0.72em; }
 .js .reveal.is-in { opacity: 1; transform: none; }
 
 /* ==========================================================================
+   Figures band — a fixed-attachment plate of Old Main behind the numbers,
+   the parallax device the previous site used, dialled well down.
+   ========================================================================== */
+
+.band {
+  position: relative;
+  overflow: hidden;
+  background: var(--void);
+  color: #fff;
+  padding: clamp(54px, 7vw, 92px) clamp(24px, 5vw, 72px);
+}
+
+.band__bg {
+  position: absolute;
+  inset: 0;
+  background: url("../images/oldmain-bg.jpg") center center / cover no-repeat fixed;
+  opacity: 0.34;
+}
+
+/* a contrast floor, so a label never lands on the bright part of the sky */
+.band::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 14, 26, 0.30);
+  pointer-events: none;
+}
+
+.band__inner { position: relative; z-index: 1; max-width: 1080px; margin: 0 auto; }
+
+.figures {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px 24px;
+  margin: 0;
+}
+.figure { text-align: center; }
+
+.figure__n {
+  font-family: var(--display);
+  font-size: clamp(2.5rem, 5.2vw, 3.7rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin: 0 0 10px;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+.figure__l {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  font-weight: 400;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #A8B2C4;
+  line-height: 1.7;
+  max-width: 190px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  /* fixed attachment misbehaves on touch browsers */
+  .band__bg { background-attachment: scroll; }
+  .figures { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ==========================================================================
    Responsive
    ========================================================================== */
 

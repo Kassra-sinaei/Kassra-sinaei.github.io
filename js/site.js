@@ -314,6 +314,31 @@
     play();
   }
 
+  /* ---------------------------- figures -------------------------------- */
+
+  var figs = Array.prototype.slice.call(document.querySelectorAll(".figure__n"));
+  if (figs.length) {
+    if (reduceMotion || !("IntersectionObserver" in window)) {
+      figs.forEach(function (n) { n.textContent = n.dataset.to; });
+    } else {
+      var fio = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          fio.unobserve(en.target);
+          var el = en.target, to = parseInt(el.dataset.to, 10) || 0, t0 = null;
+          el.textContent = "0";
+          (function tick(ts) {
+            if (t0 === null) t0 = ts;
+            var k = Math.min((ts - t0) / 1100, 1);
+            el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3)));
+            if (k < 1) requestAnimationFrame(tick);
+          })(performance.now());
+        });
+      }, { threshold: 0.5 });
+      figs.forEach(function (n) { fio.observe(n); });
+    }
+  }
+
   /* ----------------------------- lightbox ------------------------------ */
 
   var box = document.getElementById("lightbox");
