@@ -638,11 +638,11 @@ a.tag i { font-size: 0.72em; }
 
 /* ---------- timeline (experience) ---------- */
 
-.timeline { position: relative; padding-left: 64px; }
+.timeline { position: relative; padding-left: 96px; }
 .timeline::before {
   content: "";
   position: absolute;
-  left: 21px;
+  left: 38px;
   top: 10px;
   bottom: 10px;
   width: 1px;
@@ -655,10 +655,11 @@ a.tag i { font-size: 0.72em; }
 /* the organisation's mark stands where the timeline dot used to */
 .tl__logo {
   position: absolute;
-  left: -64px;
+  left: -58px;
+  transform: translateX(-50%);
   top: -1px;
-  width: 43px;
-  height: 43px;
+  width: 44px;
+  height: 44px;
   display: grid;
   place-items: center;
   background: var(--surface);
@@ -671,10 +672,17 @@ a.tag i { font-size: 0.72em; }
 }
 .tl__logo img { width: 27px; height: 27px; object-fit: contain; }
 .tl:hover .tl__logo {
-  transform: translateY(-2px);
+  transform: translateX(-50%) translateY(-2px);
   border-color: rgba(61, 139, 253, 0.45);
   box-shadow: 0 8px 18px rgba(16, 21, 32, 0.10);
 }
+
+/* a wordmark needs the room; it stays centred on the same line */
+.tl__logo--wide { width: 76px; }
+.tl__logo--wide img { width: 62px; height: auto; }
+
+/* a mark that is wider than it is tall, but not a full wordmark */
+.tl__logo--mark img { width: 34px; height: auto; }
 
 /* no public mark for this one — set the initials instead */
 .tl__logo--text {
@@ -781,11 +789,30 @@ a.tag i { font-size: 0.72em; }
   border: 1px solid var(--line);
   border-left: 3px solid var(--flux);
   border-radius: 6px;
-  padding: 22px 24px;
+  padding: 20px 24px;
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 8px 24px;
-  align-items: baseline;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px 20px;
+  align-items: center;
+}
+
+.edu__logo {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  flex: none;
+}
+.edu__logo img { width: 30px; height: 30px; object-fit: contain; }
+.edu__logo--text {
+  font-family: var(--display);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--muted);
 }
 .edu__item--now { border-left-color: var(--barrier); }
 .edu__degree { font-size: 1.06rem; font-weight: 700; letter-spacing: -0.02em; }
@@ -950,16 +977,18 @@ a.tag i { font-size: 0.72em; }
 
 @media (max-width: 720px) {
   body { font-size: 16px; }
-  .timeline { padding-left: 52px; }
-  .timeline::before { left: 17px; }
-  .tl__logo { left: -52px; width: 35px; height: 35px; border-radius: 8px; }
-  .tl__logo img { width: 22px; height: 22px; }
+  .timeline { padding-left: 74px; }
+  .timeline::before { left: 28px; }
+  .tl__logo { left: -46px; width: 37px; height: 37px; border-radius: 8px; }
+  .tl__logo img { width: 23px; height: 23px; }
+  .tl__logo--wide { width: 62px; }
+  .tl__logo--wide img { width: 50px; }
   .gallery { grid-template-columns: repeat(2, 1fr); }
   .shot--h2 { grid-row: span 1; }
   .pub { grid-template-columns: 1fr; gap: 6px; }
   .pub__year { padding-top: 0; }
-  .edu__item { grid-template-columns: 1fr; }
-  .edu__meta { text-align: left; }
+  .edu__item { grid-template-columns: auto 1fr; }
+  .edu__meta { text-align: left; grid-column: 2; }
   .projects { grid-template-columns: 1fr; }
   .hero__actions .btn { flex: 1 1 auto; justify-content: center; }
 }
